@@ -69,7 +69,7 @@ header.cover > div,
   justify-content: space-between;
 }
 
-/* Hero title block: left-aligned, but not hard against edge */
+/* Hero title block: left-aligned, but comfortably inset */
 header .tc-l,
 .site-hero-text {
   text-align: left !important;
@@ -308,7 +308,7 @@ main article h3 {
    Home page intro section
    ========================================================= */
 
-/* This keeps the main home intro readable and not oddly centred */
+/* This keeps the main home intro readable and left-aligned */
 .home main article,
 .home .nested-copy-line-height,
 body.home main .lh-copy {
@@ -331,16 +331,87 @@ main > article:first-of-type {
 
 
 /* =========================================================
-   News listing / cards
+   News archive/listing layout
+   One full-width article card per row
    ========================================================= */
 
-/* Prevent news cards becoming tall, narrow columns */
-section .w-100,
-section .w-third,
-section .w-50 {
-  box-sizing: border-box;
+/*
+   This changes Ananke-style listing cards from 3 columns
+   into one readable full-width card per article.
+*/
+
+main .flex-l {
+  display: block !important;
 }
 
+/* Catch common Ananke column-width classes */
+main .w-third-l,
+main .w-third,
+main .w-33,
+main .w-30,
+main .w-30-l,
+main .w-33-l {
+  width: 100% !important;
+  max-width: 860px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Article cards on list pages */
+main .flex-l article,
+main section article {
+  width: 100% !important;
+  max-width: 860px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 2.5rem !important;
+}
+
+/* Card styling */
+main section article,
+.pa3.bg-white,
+.bg-white.pa3,
+article.bg-white {
+  background: #ffffff !important;
+  border-radius: 0.65rem !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Give listing cards better internal spacing */
+main section article.pa3,
+main section article .pa3,
+.pa3.bg-white,
+.bg-white.pa3 {
+  padding: 2rem !important;
+}
+
+/* News/listing card headings */
+main section article h1,
+main section article h2,
+main section article h3,
+.pa3.bg-white h1,
+.pa3.bg-white h2,
+.pa3.bg-white h3,
+.bg-white.pa3 h1,
+.bg-white.pa3 h2,
+.bg-white.pa3 h3 {
+  font-size: clamp(1.65rem, 3vw, 2.2rem) !important;
+  line-height: 1.15 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0.8rem !important;
+}
+
+/* News/listing card excerpt text */
+main section article p,
+.pa3.bg-white p,
+.bg-white.pa3 p,
+article.bg-white p {
+  font-size: 1.05rem !important;
+  line-height: 1.65 !important;
+  color: #4a4a4a !important;
+}
+
+/* News links */
 article h1 a,
 article h2 a,
 article h3 a {
@@ -354,62 +425,20 @@ article h3 a:hover {
   color: #5b2b83 !important;
 }
 
-/* News cards on listing pages */
-.pa3.bg-white,
-.bg-white.pa3,
-article.bg-white {
-  background: #ffffff !important;
-  border-radius: 0.4rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-}
-
-/* News card headings */
-.pa3.bg-white h1,
-.pa3.bg-white h2,
-.pa3.bg-white h3,
-.bg-white.pa3 h1,
-.bg-white.pa3 h2,
-.bg-white.pa3 h3 {
-  font-size: 1.55rem !important;
-  line-height: 1.12 !important;
-}
-
-/* News card excerpt text */
-.pa3.bg-white p,
-.bg-white.pa3 p,
-article.bg-white p {
-  font-size: 0.98rem !important;
-  line-height: 1.6 !important;
-}
-
-/* On wider screens, allow news cards to breathe */
-@media screen and (min-width: 60em) {
-  .w-third-l {
-    width: 31% !important;
-    margin-right: 2.3% !important;
-  }
-
-  .w-third-l:nth-child(3n) {
-    margin-right: 0 !important;
-  }
-}
-
-/* Tablet and mobile: stack news cards */
-@media screen and (max-width: 60em) {
-  .w-third-l,
-  .w-third,
-  .w-33,
-  .w-30 {
-    width: 100% !important;
-    max-width: 760px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
+/* Mobile news cards */
+@media screen and (max-width: 40em) {
+  main section article,
   .pa3.bg-white,
   .bg-white.pa3,
   article.bg-white {
+    padding: 1.4rem !important;
     margin-bottom: 1.5rem !important;
+  }
+
+  main section article h1,
+  main section article h2,
+  main section article h3 {
+    font-size: 1.45rem !important;
   }
 }
 
@@ -496,8 +525,7 @@ blockquote {
 
 /* =========================================================
    Emergency cache/version check
-   If you can see this effect, the CSS file is loading.
-   Remove after testing if desired.
+   Uncomment this if you want to check whether this CSS file is loading.
    ========================================================= */
 
 /*
