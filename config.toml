@@ -34,7 +34,7 @@ googleAnalytics = "G-DVSMVMTXEQ"
 
   [[menu.main]]
     name = "Join"
-    url = "/join/"
+    url = "/join-us/"
     weight = 20
 
   [[menu.main]]
