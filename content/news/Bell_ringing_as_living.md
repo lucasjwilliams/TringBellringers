@@ -2,7 +2,7 @@
 title: "Bell ringing as living heritage"
 date: 2026-04-01
 description: "An article first published in The Ringing World, reflecting on learning to ring at Tring and the value of bell ringing as living heritage."
-featured_image: "images/Band2025.jpg"
+featured_image: "images/Tring-Aerial.jpg"
 ---
 
 This article first appeared in the February 2026 edition of <a href="https://bb.ringingworld.co.uk/issueno/5992">*The Ringing World*</a>. It was published alongside an article by Matt Rabagliati on the UK’s ratification of the UNESCO 2003 Convention for the Safeguarding of the Intangible Cultural Heritage, and what this could mean for bell ringing.
