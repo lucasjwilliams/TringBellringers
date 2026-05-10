@@ -1,6 +1,6 @@
 ---
 title: About us
-featured_image: "images/Band2025.jpg"
+featured_image: "images/band2025-new.jpg"
 description: "The ringers of St Peter & St Paul, Tring"
 ---
 
