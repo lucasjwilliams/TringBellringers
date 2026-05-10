@@ -7,6 +7,6 @@ We are a friendly and diverse group that enjoy the unique and challenging hobby 
 
 You can find out about the fasinating history of the tower, bells and clock in the [about]({{< ref "about">}}) section.
 
-![Tring Ringers](static/images/Band2025.jpg)
-
 If you're considering joining us, whether as an experienced ringer or a new recruit, we would be very happy to welcome you. Bell ringing is a struggling art so the more the merrier, check out the [join]({{< ref "join-us">}}) section for the details.
+
+![Tring Ringers](static/images/Band2025.jpg)
