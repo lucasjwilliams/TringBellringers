@@ -1,31 +1,54 @@
 ---
 title: Join us
 featured_image: "images/Band2025.jpg"
-description: We welcome all visitors and new ringers!
+description: We welcome visitors, new ringers and anyone curious about learning to ring.
 ---
 
-# Learn to ring
-## Why?
-* Develop a traditional skill
-* Involvment in celebrations like marriages and state events
-* Member of a friendly team
+# Join us
 
-The central group of bell ringers has more useful information for those considering ringing [here](https://cccbr.org.uk/bellringing/learn/).
+Bell ringing is a unique mix of music, movement, teamwork and tradition. It is open to people of all ages and backgrounds, and you do not need any musical experience to begin.
 
-## When?
-We run a weekly learners session on Tuesday at 19:00. A group of experienced ringing teachers attend to provide you the best possible tuition.
+At Tring, we are always pleased to welcome new learners, returning ringers and visiting ringers.
 
-Whether you're brand new to ringing or have had a go in the past we would be very happy to welcome you, please [reach out]({{< ref "contact">}}) to find out more.
+## Learn to ring
 
-# Current ringers
-Anyone that has already learnt to ring is very welcome to join us at our practice night or on Sunday, all abilities are appreciated. We occasionally ring at other times so if you're visiting the area do get in contact.  
-Access is normally via the West door, at the bottom of the tower.
+Learning to ring gives you the chance to:
 
-#### Tuesday practice 
-19:00-20:00 - Learner session focussing on handling to rounds  
-20:00-21:15 - Normal practice time
+* develop a traditional skill
+* become part of a friendly local team
+* take part in weddings, civic occasions and national events
+* enjoy a hobby that is both physical and mentally absorbing
+* help keep an important part of Tring’s heritage alive
 
-Standard repertoire: Doubles - Plain bob, Grandsire and Stedman. Minor - Plain bob, St Clements and Cambridge. Triples - Grandsire, Plain Hunt and call changes.
+Most people start with one-to-one teaching on a single bell, learning how to handle the rope safely and confidently. From there, you gradually build up to ringing with others as part of the band.
 
-#### Sunday service
-09:30-10:00 - Before the main Sunday service
+The Central Council of Church Bell Ringers has more useful information for anyone thinking about learning to ring [here](https://cccbr.org.uk/bellringing/learn/).
+
+## When do learners meet?
+
+We run a weekly learners’ session on Tuesdays at **19:00**. A group of experienced ringing teachers is usually available to provide tuition and support.
+
+Whether you are completely new to ringing, have tried it before, or are simply curious, we would be very happy to hear from you. Please [contact us]({{< ref "contact">}}) to arrange a visit or ask any questions.
+
+## Current and visiting ringers
+
+If you already ring, you are very welcome to join us at our Tuesday practice or for Sunday service ringing. All abilities are appreciated, and we are always glad to meet ringers visiting the area.
+
+Access is normally via the West Door, at the bottom of the tower.
+
+## Tuesday practice
+
+**19:00–20:00** — Learner session, usually focusing on handling, rounds and early ringing skills  
+**20:00–21:15** — Main practice
+
+Our usual repertoire includes:
+
+* **Doubles:** Plain Bob, Grandsire and Stedman
+* **Minor:** Plain Bob, St Clement’s and Cambridge
+* **Triples:** Grandsire, Plain Hunt and call changes
+
+## Sunday service ringing
+
+**09:30–10:00** — Before the main Sunday service
+
+Please [get in touch]({{< ref "contact">}}) before visiting, as ringing arrangements can occasionally vary.
