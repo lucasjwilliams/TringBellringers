@@ -1,0 +1,126 @@
+/* Tring Bellringers custom refinements */
+
+:root {
+  --tring-text: #2f2f2f;
+  --tring-dark: #111111;
+}
+
+body {
+  color: var(--tring-text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Header / hero image: avoids the mobile “everything is blown up” look */
+.site-hero {
+  min-height: 440px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.site-hero-overlay {
+  min-height: 440px;
+}
+
+.site-hero-title,
+.site-hero-description {
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.55);
+}
+
+/* Navigation and logo */
+.site-nav {
+  position: relative;
+  z-index: 3;
+}
+
+.site-logo {
+  width: 180px !important;
+  max-width: 180px !important;
+  height: auto !important;
+  display: block;
+}
+
+.site-menu-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.site-menu-link {
+  letter-spacing: 0.04em;
+}
+
+/* Stop content images becoming huge unless deliberately set */
+article .nested-copy-line-height img,
+.nested-img img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.35rem;
+}
+
+article .nested-copy-line-height p img,
+article .nested-copy-line-height > img {
+  display: block;
+  margin: 1.5rem auto;
+}
+
+.homepage-band-photo {
+  display: block;
+  width: 100%;
+  max-width: 780px;
+  height: auto;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 700px) {
+  .site-hero {
+    min-height: 360px;
+    background-size: contain;
+    background-position: center top;
+    background-color: var(--tring-dark);
+  }
+
+  .site-hero-overlay {
+    min-height: 360px;
+    background-color: rgba(0, 0, 0, 0.62) !important;
+  }
+
+  .site-nav {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .site-logo {
+    width: 95px !important;
+    max-width: 95px !important;
+  }
+
+  .site-menu {
+    margin-top: 0.75rem;
+  }
+
+  .site-menu-list {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+    line-height: 1.7;
+  }
+
+  .site-menu-item {
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
+
+  .site-hero-text {
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .site-hero-title {
+    font-size: 2rem;
+  }
+
+  .site-hero-description {
+    font-size: 1rem;
+  }
+}
