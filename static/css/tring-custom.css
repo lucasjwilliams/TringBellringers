@@ -127,3 +127,10 @@ img[src*="logo"] {
         min-height: 70vh;
     }
 }
+/* Remove hero overlay haze */
+.cover::before,
+.cover::after {
+    background: transparent !important;
+    opacity: 0 !important;
+    content: none !important;
+}
