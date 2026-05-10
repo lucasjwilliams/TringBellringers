@@ -34,12 +34,6 @@ googleAnalytics = "G-DVSMVMTXEQ"
     weight = 10
 
   [[menu.main]]
-    identifier = "history"
-    name = "History"
-    url = '/history/'
-    weight = 15
-
-  [[menu.main]]
     identifier = "join_us"
     name = "Join"
     url = '/join-us/'
@@ -50,6 +44,12 @@ googleAnalytics = "G-DVSMVMTXEQ"
     name = "News"
     url = '/news/'
     weight = 80
+
+  [[menu.main]]
+    identifier = "history"
+    name = "History"
+    url = '/history/'
+    weight = 15
 
   [[menu.main]]
     identifier = "weddings"
