@@ -88,3 +88,42 @@ img {
         font-size: 1.05rem;
     }
 }
+/* =========================================
+   HEADER LOGO SIZE
+========================================= */
+
+.site-logo img,
+img[src*="logo"] {
+    max-height: 120px;
+    width: auto;
+}
+
+/* Smaller on mobile */
+@media (max-width: 768px) {
+    .site-logo img,
+    img[src*="logo"] {
+        max-height: 80px;
+    }
+}
+
+/* =========================================
+   HERO IMAGE POSITIONING
+========================================= */
+
+/* Stop aggressive zoom/crop */
+.bg-top {
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Taller hero so image crops less */
+.cover {
+    min-height: 60vh;
+}
+
+/* Optional: even less zoom */
+@media (min-width: 1000px) {
+    .cover {
+        min-height: 70vh;
+    }
+}
