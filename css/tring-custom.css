@@ -95,7 +95,6 @@ img {
 
 .site-logo img,
 img[src*="logo"] {
-    max-height: 120px;
     width: auto;
 }
 
@@ -103,7 +102,6 @@ img[src*="logo"] {
 @media (max-width: 768px) {
     .site-logo img,
     img[src*="logo"] {
-        max-height: 80px;
     }
 }
 
