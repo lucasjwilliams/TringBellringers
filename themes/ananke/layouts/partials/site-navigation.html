@@ -1,23 +1,6 @@
-<style>
-  img.site-logo {
-    width: 180px !important;
-    max-width: 180px !important;
-    height: auto !important;
-    display: block;
-  }
-
-  @media screen and (max-width: 700px) {
-    img.site-logo {
-      width: 95px !important;
-      max-width: 95px !important;
-      height: auto !important;
-    }
-  }
-</style>
-
-<nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l justify-between items-center center">
-    <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw2 hover-white no-underline white-90 dib">
+<nav class="site-nav pv3 ph3 ph4-ns" role="navigation">
+  <div class="site-nav-inner flex-l justify-between items-center center">
+    <a href="{{ .Site.Home.RelPermalink }}" class="site-logo-link f3 fw2 hover-white no-underline white-90 dib" aria-label="{{ $.Site.Title }} home">
       {{ with .Site.Params.site_logo }}
         <img src="{{ relURL . }}" class="site-logo" alt="{{ $.Site.Title }}" />
       {{ else }}
@@ -25,14 +8,14 @@
       {{ end }}
     </a>
 
-    <div class="flex-l items-center">
+    <div class="site-menu flex-l items-center">
       {{ partial "i18nlist.html" . }}
 
       {{ if .Site.Menus.main }}
-        <ul class="{{ cond (eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
+        <ul class="site-menu-list {{ cond (eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
           {{ range .Site.Menus.main }}
-            <li class="list f5 f4-ns fw4 dib {{ cond (eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
-              <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
+            <li class="site-menu-item list f5 f4-ns fw4 dib {{ cond (eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
+              <a class="site-menu-link hover-white no-underline white-90" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
                 {{ .Name }}
               </a>
             </li>
