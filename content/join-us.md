@@ -4,8 +4,6 @@ featured_image: "images/Band2025.jpg"
 description: We welcome visitors, new ringers and anyone curious about learning to ring.
 ---
 
-# Join us
-
 Bell ringing is a unique mix of music, movement, teamwork and tradition. It is open to people of all ages and backgrounds, and you do not need any musical experience to begin.
 
 At Tring, we are always pleased to welcome new learners, returning ringers and visiting ringers.
@@ -38,8 +36,8 @@ Access is normally via the West Door, at the bottom of the tower.
 
 ## Tuesday practice
 
-**19:00–20:00** — Learner session, usually focusing on handling, rounds and early ringing skills  
-**20:00–21:15** — Main practice
+**19:00–20:00** - Learner session, usually focusing on handling, rounds and early ringing skills  
+**20:00–21:15** - Main practice
 
 Our usual repertoire includes:
 
