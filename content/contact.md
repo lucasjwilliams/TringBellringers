@@ -1,6 +1,6 @@
 ---
 title: Contact
-featured_image: 'images/Town-Aerial'
+featured_image: 'images/Tring-Aerial'
 description: We'd love to hear from you
 ---
 
