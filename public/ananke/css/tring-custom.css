@@ -1,7 +1,14 @@
-/* Typography */
+/* =========================================================
+   Tring Bellringers custom styles
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   1. Fonts and general site feel
+   --------------------------------------------------------- */
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
   color: #333;
   background: #f7f7f4;
 }
@@ -9,30 +16,93 @@ body {
 h1,
 h2,
 h3,
-h4,
-.site-hero-title {
+h4 {
   font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+p {
+  line-height: 1.65;
+}
+
+
+/* ---------------------------------------------------------
+   2. Header / navigation
+   --------------------------------------------------------- */
+
+.site-nav {
+  background: transparent;
+}
+
+.site-nav-inner {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-logo,
+.site-logo-link img,
+nav img {
+  width: 95px !important;
+  max-width: 95px !important;
+  height: auto !important;
+  display: block !important;
+}
+
+.site-menu-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.site-menu-link {
   font-weight: 500;
 }
 
-/* Homepage/content layout */
 
-main article,
-main .nested-copy-line-height,
-main .nested-links {
-  max-width: 760px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  text-align: left !important;
+/* ---------------------------------------------------------
+   3. Hero / top banner
+   --------------------------------------------------------- */
+
+header.cover,
+.site-hero {
+  min-height: 420px;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
+header.cover > div,
+.site-hero-overlay {
+  min-height: 420px;
+}
+
+header h1,
+.site-hero-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.2rem, 5vw, 4.5rem) !important;
+  line-height: 1.08 !important;
+  font-weight: 500 !important;
+}
+
+header h2,
+.site-hero-description {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-size: clamp(1rem, 2vw, 1.45rem) !important;
+  line-height: 1.45 !important;
+}
+
+
+/* ---------------------------------------------------------
+   4. Main site content
+   --------------------------------------------------------- */
+
+main {
+  background: #f7f7f4;
 }
 
 main p {
   font-size: 1.05rem;
-  line-height: 1.7;
   color: #3f3f3f;
-  text-align: left !important;
 }
 
 main h2 {
@@ -41,29 +111,147 @@ main h2 {
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   color: #333;
-  text-align: left !important;
 }
 
 main a {
   color: #5b2a86;
 }
 
-/* Homepage band image */
+
+/* ---------------------------------------------------------
+   5. Homepage opening section only
+   This targets the first text block on the homepage.
+   It keeps the content in a readable column, but aligns text left.
+   --------------------------------------------------------- */
+
+.home main article,
+.home main .nested-copy-line-height,
+.home main .nested-links {
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  text-align: left !important;
+}
+
+.home main article p,
+.home main .nested-copy-line-height p,
+.home main .nested-links p {
+  text-align: left !important;
+  font-size: 1.08rem;
+  line-height: 1.72;
+}
+
+
+/* ---------------------------------------------------------
+   6. Homepage band image
+   Add class="homepage-band-photo" to the image if using HTML.
+   Example:
+   <img src="/images/Band2025.jpg" class="homepage-band-photo" alt="Members of Tring Ringers">
+   --------------------------------------------------------- */
 
 .homepage-band-photo {
   display: block;
   width: 100%;
-  max-width: 760px;
+  max-width: 780px;
   height: auto;
   margin: 2rem auto;
+  border-radius: 10px;
+}
+
+
+/* ---------------------------------------------------------
+   7. News cards / images
+   Light touch improvements
+   --------------------------------------------------------- */
+
+article img,
+.nested-img img {
   border-radius: 8px;
 }
 
-/* Logo sizing */
+.read-more,
+a[href*="read"] {
+  font-weight: 600;
+}
 
-.site-logo {
-  width: 95px !important;
-  max-width: 95px !important;
-  height: auto !important;
-  display: block;
+
+/* ---------------------------------------------------------
+   8. Footer
+   --------------------------------------------------------- */
+
+footer {
+  font-size: 0.95rem;
+}
+
+
+/* ---------------------------------------------------------
+   9. Mobile fixes
+   --------------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  .site-logo,
+  .site-logo-link img,
+  nav img {
+    width: 80px !important;
+    max-width: 80px !important;
+  }
+
+  .site-nav {
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+
+  .site-menu-list {
+    margin-top: 1rem;
+    padding-left: 0 !important;
+  }
+
+  .site-menu-item {
+    display: inline-block;
+    margin-right: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .site-menu-link {
+    font-size: 1rem !important;
+  }
+
+  header.cover,
+  .site-hero,
+  header.cover > div,
+  .site-hero-overlay {
+    min-height: 340px;
+  }
+
+  header h1,
+  .site-hero-title {
+    font-size: 2.2rem !important;
+  }
+
+  header h2,
+  .site-hero-description {
+    font-size: 1.05rem !important;
+  }
+
+  .home main article,
+  .home main .nested-copy-line-height,
+  .home main .nested-links {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .home main article p,
+  .home main .nested-copy-line-height p,
+  .home main .nested-links p,
+  main p {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  main h2 {
+    font-size: 1.55rem;
+  }
 }
