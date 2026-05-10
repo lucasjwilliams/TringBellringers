@@ -126,17 +126,7 @@ img[src*="logo"] {
     .cover {
         min-height: 70vh;
     }
-}
-/* Remove hero overlay haze */
-.cover::before,
-.cover::after {
-    background: transparent !important;
-    opacity: 0 !important;
-    content: none !important;
-}
-/* Kill Tachyons-style overlay */
-.bg-black-60,
-.bg-black-70,
-.bg-black-80 {
-    background-color: transparent !important;
+.bg-top {
+    background-size: cover;
+    background-position: center 30%;
 }
