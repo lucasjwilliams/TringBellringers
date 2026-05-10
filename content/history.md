@@ -1,6 +1,6 @@
 ---
 title: History
-featured_image: "images/old_band.jpg"
+featured_image: "images/band1921.jpg"
 description: "The Tring Ringers in 1921"
 ---
 
