@@ -32,26 +32,31 @@ googleAnalytics = "G-DVSMVMTXEQ"
     name = "About"
     url = '/about/'
     weight = 10
+
+  [[menu.main]]
+    identifier = "history"
+    name = "History"
+    url = '/history/'
+    weight = 15
+
   [[menu.main]]
     identifier = "join_us"
     name = "Join"
     url = '/join-us/'
     weight = 20
+
   [[menu.main]]
     identifier = "news"
     name = "News"
     url = '/news/'
     weight = 80
+
   [[menu.main]]
     identifier = "weddings"
     name = "Weddings"
     url = '/weddings/'
     weight = 90
-  [[menu.main]]
-    identifier = "other"
-    name = "Other"
-    url = '/other/'
-    weight = 95
+
   [[menu.main]]
     identifier = "contact"
     name = "Contact"
