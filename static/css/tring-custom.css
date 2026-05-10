@@ -134,3 +134,9 @@ img[src*="logo"] {
     opacity: 0 !important;
     content: none !important;
 }
+/* Kill Tachyons-style overlay */
+.bg-black-60,
+.bg-black-70,
+.bg-black-80 {
+    background-color: transparent !important;
+}
