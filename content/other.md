@@ -1,6 +1,6 @@
 ---
 title: Other
-featured_image: 'images/news-files'
+featured_image: 'images/news-files.jpg'
 description: 
 ---
 
