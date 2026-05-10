@@ -20,7 +20,7 @@ googleAnalytics = "G-DVSMVMTXEQ"
   site_logo = "images/logo.png"
   description = "Home of the Tring church bell ringers"
   background_color_class = "bg-silver"
-  recent_posts_number = 2
+  recent_posts_number = 1
   custom_css = ["css/tring-custom.css"]
 
   email = "info@tringbells.org"
