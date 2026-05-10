@@ -1,7 +1,7 @@
 ---
 title: About us
-featured_image: "images/old_band.jpg"
-description: "Photograph of the band in 1921"
+featured_image: "images/Town.Aerial.jpg"
+description: "Tring Church from the Air"
 ---
 # What is ringing?
 
