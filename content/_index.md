@@ -4,11 +4,9 @@ description: "We ring the bells at St Peter & St Paul’s Church in the heart of
 featured_image: "images/bells_up.png"
 ---
 
-We are the local band of bellringers at St Peter & St Paul’s Church, Tring. We ring for Sunday services, weddings, special occasions and national events — and we are always pleased to welcome new people.
+We are the local band of bellringers at St Peter & St Paul’s Church, Tring. We ring for Sunday services, weddings, special occasions and national events, and we are always pleased to welcome new people.
 
 Bellringing is a unique mix of music, rhythm, teamwork and tradition. It is sociable, absorbing and surprisingly challenging, but you do not need to be musical, especially strong, or a regular churchgoer to learn. If you are curious, the best thing to do is come and see what happens in the tower.
-
-<img src="/images/Band2025.jpg" alt="Members of Tring Bellringers" class="homepage-band-photo">
 
 ## Come and see us
 
