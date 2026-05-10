@@ -2,7 +2,12 @@
   <div class="site-nav-inner flex-l justify-between items-center center">
     <a href="{{ .Site.Home.RelPermalink }}" class="site-logo-link f3 fw2 hover-white no-underline white-90 dib" aria-label="{{ $.Site.Title }} home">
       {{ with .Site.Params.site_logo }}
-        <img src="{{ relURL . }}" class="site-logo" alt="{{ $.Site.Title }}" />
+        <img
+          src="{{ relURL . }}"
+          class="site-logo"
+          alt="{{ $.Site.Title }}"
+          style="width: 95px !important; max-width: 95px !important; height: auto !important; display: block;"
+        />
       {{ else }}
         {{ .Site.Title }}
       {{ end }}
