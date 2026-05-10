@@ -1,131 +1,181 @@
 /* =========================================================
    Tring Bellringers custom CSS
-   File location: assets/css/tring-custom.css
+   File: assets/css/tring-custom.css
    ========================================================= */
 
-/* ---------------------------------------------------------
-   1. Site-wide font and base typography
-   --------------------------------------------------------- */
+
+/* =========================================================
+   Global font and base styling
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap');
+
+html,
+body {
+  font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  background: #f7f7f5;
+  color: #3f3f3f;
+  font-size: 18px;
+  line-height: 1.65;
+}
 
 body {
-  font-family: "Inter", "Avenir Next", Avenir, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
-  color: #3f3f3f;
-  background-color: #ffffff;
-  font-size: 18px;
-  line-height: 1.7;
   letter-spacing: 0.01em;
 }
 
-p,
-li {
+p {
   font-size: 1.05rem;
   line-height: 1.75;
+  color: #444;
 }
 
 h1,
 h2,
 h3,
-h4 {
-  font-family: "Inter", "Avenir Next", Avenir, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
-  color: #2f2f2f;
+h4,
+h5,
+h6 {
+  font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-weight: 800;
   letter-spacing: -0.02em;
-  line-height: 1.2;
-}
-
-h1 {
-  font-weight: 700 !important;
-}
-
-h2,
-h3 {
-  font-weight: 700 !important;
+  color: #202020;
 }
 
 a {
-  color: #5a2d82;
+  color: #5b2b83;
 }
 
 a:hover {
-  color: #2f1747;
+  color: #7c3fb0;
 }
 
 
-/* ---------------------------------------------------------
-   2. Header and hero image
-   --------------------------------------------------------- */
+/* =========================================================
+   Header / hero area
+   ========================================================= */
 
 header.cover,
 .site-hero {
-  min-height: 420px;
-  background-size: cover !important;
+  min-height: 430px;
   background-position: center center !important;
+  background-size: cover !important;
 }
 
 header.cover > div,
 .site-hero-overlay {
-  min-height: 420px;
+  min-height: 430px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-/* Hero title area */
-header.cover h1,
+/* Hero title block: left-aligned, but not hard against edge */
+header .tc-l,
+.site-hero-text {
+  text-align: left !important;
+  max-width: 1180px !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+/* Main hero title */
+header h1,
 .site-hero-title {
-  color: #ffffff !important;
-  font-size: clamp(2.2rem, 5vw, 4.5rem) !important;
-  font-weight: 700 !important;
-  line-height: 1.05 !important;
-  max-width: 900px;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45);
+  font-size: clamp(2.5rem, 6vw, 4.8rem) !important;
+  line-height: 1.03 !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.045em !important;
+  color: #fff !important;
+  max-width: 850px;
+  text-align: left !important;
 }
 
-header.cover h2,
+/* Hero subtitle / description */
+header h2,
 .site-hero-description {
-  color: rgba(255, 255, 255, 0.88) !important;
-  font-size: clamp(1rem, 2vw, 1.45rem) !important;
-  max-width: 760px;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  font-size: clamp(1.05rem, 2vw, 1.35rem) !important;
+  line-height: 1.4 !important;
+  font-weight: 700 !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+  max-width: 780px !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  text-align: left !important;
 }
 
-/* On large screens, hero text sits left but not hard against edge */
+/* Larger screens: elegant inset */
 @media screen and (min-width: 60em) {
-  header.cover .tc-l,
+  header .tc-l,
   .site-hero-text {
-    text-align: left !important;
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
+    padding-left: 3.5rem !important;
+    padding-right: 3.5rem !important;
+  }
+}
+
+/* Very wide screens: stop it looking stuck to the far left */
+@media screen and (min-width: 90em) {
+  header .tc-l,
+  .site-hero-text {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+}
+
+/* Mobile hero */
+@media screen and (max-width: 40em) {
+  header.cover,
+  .site-hero {
+    min-height: 520px;
+    background-position: center center !important;
   }
 
-  header.cover h1,
-  header.cover h2,
-  .site-hero-title,
+  header.cover > div,
+  .site-hero-overlay {
+    min-height: 520px;
+  }
+
+  header .tc-l,
+  .site-hero-text {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  header h1,
+  .site-hero-title {
+    font-size: 2.4rem !important;
+    line-height: 1.08 !important;
+  }
+
+  header h2,
   .site-hero-description {
-    margin-left: 0 !important;
-    margin-right: auto !important;
+    font-size: 1rem !important;
   }
 }
 
 
-/* ---------------------------------------------------------
-   3. Navigation
-   --------------------------------------------------------- */
+/* =========================================================
+   Navigation
+   ========================================================= */
 
 .site-nav {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
+  width: 100%;
+  padding-top: 1.2rem !important;
+  padding-bottom: 1.2rem !important;
 }
 
 .site-nav-inner {
-  width: 100%;
-  max-width: 1280px;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-/* Logo */
 .site-logo {
   width: 150px !important;
   max-width: 150px !important;
@@ -133,54 +183,55 @@ header.cover h2,
   display: block !important;
 }
 
-/* Menu */
+.site-logo-link {
+  display: inline-block;
+}
+
 .site-menu-list {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 !important;
+  padding-left: 0 !important;
 }
 
 .site-menu-item {
   font-size: 1rem !important;
-  font-weight: 500 !important;
-  letter-spacing: 0.01em;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em;
 }
 
 .site-menu-link {
-  color: rgba(255, 255, 255, 0.92) !important;
+  color: rgba(255, 255, 255, 0.94) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
 }
 
 .site-menu-link:hover {
-  color: #ffffff !important;
+  color: #fff !important;
 }
 
-/* Mobile navigation */
-@media screen and (max-width: 59.99em) {
+/* Mobile nav */
+@media screen and (max-width: 40em) {
   .site-nav {
-    padding-top: 0.75rem !important;
-    padding-bottom: 0.75rem !important;
+    padding-top: 1rem !important;
   }
 
   .site-nav-inner {
-    display: block !important;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .site-logo {
     width: 95px !important;
     max-width: 95px !important;
-    margin-bottom: 1rem;
   }
 
   .site-menu {
-    display: block !important;
+    margin-top: 1rem;
   }
 
   .site-menu-list {
-    padding-left: 0 !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.45rem 1rem;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.25rem 1rem;
+    margin-top: 0.8rem !important;
   }
 
   .site-menu-item {
@@ -190,128 +241,202 @@ header.cover h2,
   }
 }
 
+/* Desktop logo/nav */
+@media screen and (min-width: 60em) {
+  .site-logo {
+    width: 170px !important;
+    max-width: 170px !important;
+  }
+}
 
-/* ---------------------------------------------------------
-   4. Main content layout
-   --------------------------------------------------------- */
 
-/* Normal content pages */
+/* =========================================================
+   Main content layout
+   ========================================================= */
+
+main {
+  background: #f7f7f5;
+}
+
+/* General article/content pages */
 main article,
 main .nested-copy-line-height,
-main .nested-links {
-  max-width: 780px;
+main .lh-copy {
+  max-width: 820px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Do not centre all text by default */
+/* Page body spacing */
+main article {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+/* Avoid over-centred text from theme */
+main article,
 main article p,
-main article ul,
-main article ol,
-main article li {
+main article li,
+main .nested-copy-line-height,
+main .nested-copy-line-height p {
   text-align: left !important;
 }
 
-/* Keep main article headings clean */
-main article h1,
+/* But keep headings tidy */
 main article h2,
 main article h3 {
-  text-align: left !important;
-}
-
-/* Better spacing between sections */
-main article h2 {
   margin-top: 2.5rem;
   margin-bottom: 1rem;
 }
 
-main article p {
-  margin-top: 0;
-  margin-bottom: 1.35rem;
+/* Mobile content */
+@media screen and (max-width: 40em) {
+  main article {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
 }
 
 
-/* ---------------------------------------------------------
-   5. Homepage-specific improvements
-   --------------------------------------------------------- */
+/* =========================================================
+   Home page intro section
+   ========================================================= */
 
-/* Homepage intro copy should be readable and not too wide */
-.home-content,
-main > article:first-child {
-  max-width: 840px;
-  margin-left: auto;
-  margin-right: auto;
+/* This keeps the main home intro readable and not oddly centred */
+.home main article,
+.home .nested-copy-line-height,
+body.home main .lh-copy {
+  max-width: 820px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
-/* If Ananke applies tc-l to body content, neutralise it only in main */
-main .tc,
-main .tc-l {
+.home main article p,
+.home main article h2,
+.home main article h3,
+.home .nested-copy-line-height p {
   text-align: left !important;
 }
 
-/* But do not accidentally wreck header alignment */
-header .tc,
-header .tc-l {
-  text-align: inherit;
+/* If the homepage does not have body class="home", this still catches the first main text block */
+main > article:first-of-type {
+  max-width: 820px;
 }
 
 
-/* ---------------------------------------------------------
-   6. News listing/cards
-   --------------------------------------------------------- */
+/* =========================================================
+   News listing / cards
+   ========================================================= */
 
-/* News/listing pages need a wider canvas than ordinary article pages */
-section.w-100,
-section.flex-ns,
-section.cf,
-.pa3.pa4-ns.w-100.w-70-ns.center {
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
+/* Prevent news cards becoming tall, narrow columns */
+section .w-100,
+section .w-third,
+section .w-50 {
+  box-sizing: border-box;
 }
 
-/* Recent news cards */
-article h1,
-article h2 {
-  word-break: normal;
-}
-
-/* Listing card headings */
 article h1 a,
 article h2 a,
-.summary-title,
-.f3 a,
-.f2 a {
-  color: #111111 !important;
+article h3 a {
+  color: #111 !important;
   text-decoration: none;
 }
 
 article h1 a:hover,
 article h2 a:hover,
-.summary-title:hover,
-.f3 a:hover,
-.f2 a:hover {
-  color: #5a2d82 !important;
+article h3 a:hover {
+  color: #5b2b83 !important;
 }
 
-/* News summaries */
-.summary,
-article .nested-links p {
-  color: #555555;
+/* News cards on listing pages */
+.pa3.bg-white,
+.bg-white.pa3,
+article.bg-white {
+  background: #ffffff !important;
+  border-radius: 0.4rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
-/* Make news cards less cramped */
-.w-100.w-30-l,
-.w-100.w-30-ns,
-.w-30-l {
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
+/* News card headings */
+.pa3.bg-white h1,
+.pa3.bg-white h2,
+.pa3.bg-white h3,
+.bg-white.pa3 h1,
+.bg-white.pa3 h2,
+.bg-white.pa3 h3 {
+  font-size: 1.55rem !important;
+  line-height: 1.12 !important;
+}
+
+/* News card excerpt text */
+.pa3.bg-white p,
+.bg-white.pa3 p,
+article.bg-white p {
+  font-size: 0.98rem !important;
+  line-height: 1.6 !important;
+}
+
+/* On wider screens, allow news cards to breathe */
+@media screen and (min-width: 60em) {
+  .w-third-l {
+    width: 31% !important;
+    margin-right: 2.3% !important;
+  }
+
+  .w-third-l:nth-child(3n) {
+    margin-right: 0 !important;
+  }
+}
+
+/* Tablet and mobile: stack news cards */
+@media screen and (max-width: 60em) {
+  .w-third-l,
+  .w-third,
+  .w-33,
+  .w-30 {
+    width: 100% !important;
+    max-width: 760px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .pa3.bg-white,
+  .bg-white.pa3,
+  article.bg-white {
+    margin-bottom: 1.5rem !important;
+  }
 }
 
 
-/* ---------------------------------------------------------
-   7. Images
-   --------------------------------------------------------- */
+/* =========================================================
+   Recent posts section on homepage
+   ========================================================= */
+
+section.bg-near-white,
+.bg-near-white {
+  background: #f1f1ef !important;
+}
+
+section h2,
+section h3 {
+  color: #202020;
+}
+
+/* Keep recent post cards clean */
+section article {
+  background: transparent;
+}
+
+
+/* =========================================================
+   Images
+   ========================================================= */
 
 img {
   max-width: 100%;
@@ -319,139 +444,72 @@ img {
 }
 
 main article img {
-  border-radius: 6px;
+  border-radius: 0.35rem;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
 
 
-/* ---------------------------------------------------------
-   8. Footer
-   --------------------------------------------------------- */
+/* =========================================================
+   Footer
+   ========================================================= */
 
 footer {
+  background: #202020 !important;
+  color: rgba(255, 255, 255, 0.82) !important;
   font-size: 0.95rem;
-  color: #666666;
 }
 
 footer a {
-  color: #5a2d82;
+  color: #fff !important;
+}
+
+footer a:hover {
+  color: #ddd !important;
 }
 
 
-/* ---------------------------------------------------------
-   9. Mobile adjustments
-   --------------------------------------------------------- */
+/* =========================================================
+   Small refinements
+   ========================================================= */
 
-@media screen and (max-width: 59.99em) {
-  body {
-    font-size: 16px;
-    line-height: 1.65;
-  }
+.measure,
+.measure-wide,
+.measure-narrow {
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  p,
-  li {
-    font-size: 1rem;
-    line-height: 1.65;
-  }
+hr {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 2rem 0;
+}
 
-  header.cover,
-  .site-hero {
-    min-height: 470px;
-    background-position: center center !important;
-  }
-
-  header.cover > div,
-  .site-hero-overlay {
-    min-height: 470px;
-  }
-
-  header.cover h1,
-  .site-hero-title {
-    font-size: 2.15rem !important;
-    line-height: 1.1 !important;
-  }
-
-  header.cover h2,
-  .site-hero-description {
-    font-size: 1rem !important;
-  }
-
-  main article,
-  main .nested-copy-line-height,
-  main .nested-links {
-    max-width: 100%;
-  }
-
-  main article {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  main article h1,
-  main article h2,
-  main article h3 {
-    text-align: left !important;
-  }
+blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 1rem;
+  color: #555;
+  font-style: italic;
 }
 
 
-/* ---------------------------------------------------------
-   10. Desktop refinements
-   --------------------------------------------------------- */
+/* =========================================================
+   Emergency cache/version check
+   If you can see this effect, the CSS file is loading.
+   Remove after testing if desired.
+   ========================================================= */
 
-@media screen and (min-width: 60em) {
-  main {
-    padding-top: 2rem;
-  }
-
-  main article {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  /* Keep ordinary page headers centred unless they are hero overlays */
-  header:not(.cover) h1,
-  header:not(.cover) h2 {
-    text-align: center !important;
-  }
-
-  /* Keep news/listing pages from becoming too narrow */
-  .mw8,
-  .mw7 {
-    max-width: 980px;
-  }
+/*
+body::after {
+  content: "custom css loaded";
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  background: #111;
+  color: #fff;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.75rem;
+  z-index: 99999;
 }
-
-
-/* ---------------------------------------------------------
-   11. Emergency overrides for old inline styles / Ananke quirks
-   --------------------------------------------------------- */
-
-/* Stop oversized logo caused by old inline styles */
-.site-logo-link img,
-nav img.site-logo {
-  width: 150px !important;
-  max-width: 150px !important;
-  height: auto !important;
-}
-
-@media screen and (max-width: 59.99em) {
-  .site-logo-link img,
-  nav img.site-logo {
-    width: 95px !important;
-    max-width: 95px !important;
-  }
-}
-
-/* Prevent old global centring from affecting body copy */
-main p,
-main li {
-  text-align: left !important;
-}
-
-/* But keep the hero title deliberately styled */
-header.cover p,
-header.cover li {
-  text-align: inherit !important;
-}
+*/
