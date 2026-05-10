@@ -1,6 +1,6 @@
 ---
 title: About us
-featured_image: "images/Town.Aerial.jpg"
+featured_image: "images/Town-Aerial.jpg"
 description: "Tring Church from the Air"
 ---
 # What is ringing?
