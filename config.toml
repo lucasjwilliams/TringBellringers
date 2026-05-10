@@ -25,27 +25,34 @@ googleAnalytics = "G-DVSMVMTXEQ"
 
   email = "info@tringbells.org"
 
-main:
-  - name: "About"
-    url: "/about/"
-    weight: 10
+[menu]
 
-  - name: "Join"
-    url: "/join/"
-    weight: 20
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 10
 
-  - name: "News"
-    url: "/news/"
-    weight: 30
+  [[menu.main]]
+    name = "Join"
+    url = "/join/"
+    weight = 20
 
-  - name: "History"
-    url: "/history/"
-    weight: 40
+  [[menu.main]]
+    name = "News"
+    url = "/news/"
+    weight = 30
 
-  - name: "Weddings"
-    url: "/weddings/"
-    weight: 50
+  [[menu.main]]
+    name = "History"
+    url = "/history/"
+    weight = 40
 
-  - name: "Contact"
-    url: "/contact/"
-    weight: 60
+  [[menu.main]]
+    name = "Weddings"
+    url = "/weddings/"
+    weight = 50
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 60
