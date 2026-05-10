@@ -21,6 +21,7 @@ googleAnalytics = "G-DVSMVMTXEQ"
   description = "Home of the Tring church bell ringers"
   background_color_class = "bg-silver"
   recent_posts_number = 3
+  custom_css = ["css/tring-custom.css"]
 
   email = "info@tringbells.org"
 
