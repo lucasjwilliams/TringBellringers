@@ -1,390 +1,457 @@
 /* =========================================================
-   Tring Bellringers custom styles
-   File location: static/css/tring-custom.css
+   Tring Bellringers custom CSS
+   File location: assets/css/tring-custom.css
    ========================================================= */
 
-
 /* ---------------------------------------------------------
-   1. Site-wide font and general feel
+   1. Site-wide font and base typography
    --------------------------------------------------------- */
-
-html,
-body,
-.sans-serif,
-.avenir,
-.helvetica,
-.system-sans-serif {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif !important;
-}
 
 body {
-  color: #222 !important;
-  background: #ffffff !important;
+  font-family: "Inter", "Avenir Next", Avenir, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  color: #3f3f3f;
+  background-color: #ffffff;
   font-size: 18px;
-  line-height: 1.65;
-}
-
-p {
-  line-height: 1.65;
-}
-
-a {
-  color: #245c7a;
-}
-
-a:hover {
-  color: #12384b;
-}
-
-
-/* ---------------------------------------------------------
-   2. Header / navigation
-   --------------------------------------------------------- */
-
-.site-nav {
-  padding-top: 0.75rem !important;
-  padding-bottom: 0.75rem !important;
-}
-
-.site-nav-inner {
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center !important;
-}
-
-/* Logo sizing */
-.site-logo {
-  width: 95px !important;
-  max-width: 95px !important;
-  height: auto !important;
-  display: block !important;
-}
-
-/* Slightly larger logo on desktop */
-@media screen and (min-width: 60em) {
-  .site-logo {
-    width: 120px !important;
-    max-width: 120px !important;
-  }
-}
-
-/* Menu */
-.site-menu-list {
-  margin-top: 1rem !important;
-  margin-bottom: 0 !important;
-  padding-left: 0 !important;
-}
-
-.site-menu-item {
-  padding-right: 1rem !important;
-}
-
-.site-menu-link {
-  font-weight: 600 !important;
+  line-height: 1.7;
   letter-spacing: 0.01em;
 }
 
-/* Mobile menu spacing */
-@media screen and (max-width: 59.99em) {
-  .site-menu {
-    margin-top: 0.75rem;
-  }
-
-  .site-menu-item {
-    display: inline-block !important;
-    margin-bottom: 0.35rem;
-  }
+p,
+li {
+  font-size: 1.05rem;
+  line-height: 1.75;
 }
-
-
-/* ---------------------------------------------------------
-   3. Hero / homepage header image
-   --------------------------------------------------------- */
-
-/* Replace Ananke's very tall cover behaviour with something calmer */
-.site-hero,
-header.cover {
-  background-size: cover !important;
-  background-position: center center !important;
-}
-
-/* This controls the height of the large image area */
-.site-hero-overlay,
-header.cover > div {
-  min-height: 360px;
-}
-
-/* Desktop hero height */
-@media screen and (min-width: 60em) {
-  .site-hero-overlay,
-  header.cover > div {
-    min-height: 470px;
-  }
-}
-
-/* Stop the hero text being vertically overblown */
-.site-hero-text,
-header.cover .tc-l {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
-}
-
-/* Hero title */
-.site-hero-title,
-header.cover h1 {
-  font-size: 2.25rem !important;
-  line-height: 1.15 !important;
-  font-weight: 700 !important;
-  max-width: 820px;
-}
-
-/* Hero description */
-.site-hero-description,
-header.cover h2 {
-  font-size: 1.25rem !important;
-  line-height: 1.45 !important;
-  font-weight: 400 !important;
-  max-width: 700px;
-}
-
-/* Desktop hero title size */
-@media screen and (min-width: 60em) {
-  .site-hero-title,
-  header.cover h1 {
-    font-size: 3.5rem !important;
-  }
-
-  .site-hero-description,
-  header.cover h2 {
-    font-size: 1.5rem !important;
-  }
-}
-
-
-/* ---------------------------------------------------------
-   4. Left-align the opening homepage section on desktop
-   --------------------------------------------------------- */
-
-/* Ananke uses tc-l to centre content on large screens.
-   This overrides that so desktop text sits more naturally left. */
-
-@media screen and (min-width: 60em) {
-  .tc-l {
-    text-align: left !important;
-  }
-
-  header .center,
-  header .measure-wide-l,
-  header .measure-l,
-  header .measure {
-    margin-left: 0 !important;
-    margin-right: auto !important;
-  }
-}
-
-
-/* ---------------------------------------------------------
-   5. Main content width and readability
-   --------------------------------------------------------- */
-
-main {
-  background: #ffffff;
-}
-
-/* Main article/content area */
-main article,
-main .mw8,
-main .mw7,
-main .measure-wide,
-main .measure-wide-l {
-  max-width: 980px !important;
-}
-
-/* Keep article text readable */
-.nested-copy-line-height,
-.nested-links,
-.lh-copy {
-  text-align: left !important;
-}
-
-/* Do NOT make all images enormous */
-.nested-img img,
-article img,
-main img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Standard image presentation in content */
-article img,
-main article img {
-  border-radius: 10px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-
-/* ---------------------------------------------------------
-   6. Homepage intro image / band photo
-   --------------------------------------------------------- */
-
-/* If your front-page image is inside article content,
-   this stops it becoming absurdly large on desktop. */
-
-.home img,
-main img[src*="Band2025"] {
-  max-width: 760px !important;
-  width: 100% !important;
-  height: auto !important;
-  display: block !important;
-  margin: 1.5rem 0 !important;
-  border-radius: 12px;
-}
-
-/* On desktop, keep the image aligned with the text */
-@media screen and (min-width: 60em) {
-  main img[src*="Band2025"] {
-    margin-left: 0 !important;
-    margin-right: auto !important;
-  }
-}
-
-
-/* ---------------------------------------------------------
-   7. Headings
-   --------------------------------------------------------- */
 
 h1,
 h2,
 h3,
 h4 {
-  color: #1f2933;
+  font-family: "Inter", "Avenir Next", Avenir, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  color: #2f2f2f;
+  letter-spacing: -0.02em;
   line-height: 1.2;
 }
 
-main h1 {
-  font-size: 2.25rem !important;
+h1 {
   font-weight: 700 !important;
 }
 
-main h2 {
-  font-size: 1.75rem !important;
+h2,
+h3 {
   font-weight: 700 !important;
-  margin-top: 2rem;
 }
 
-main h3 {
-  font-size: 1.35rem !important;
-  font-weight: 700 !important;
+a {
+  color: #5a2d82;
+}
+
+a:hover {
+  color: #2f1747;
 }
 
 
 /* ---------------------------------------------------------
-   8. Recent news cards on homepage
+   2. Header and hero image
    --------------------------------------------------------- */
 
-/* Give recent news a cleaner card-like feel */
-section article,
-.divider-grey article {
-  border-radius: 14px;
+header.cover,
+.site-hero {
+  min-height: 420px;
+  background-size: cover !important;
+  background-position: center center !important;
 }
 
-/* News thumbnails */
-section article img,
-.divider-grey article img {
-  border-radius: 10px;
-  object-fit: cover;
+header.cover > div,
+.site-hero-overlay {
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* News titles */
-section article h1,
-section article h2,
-section article h3,
-.divider-grey article h1,
-.divider-grey article h2,
-.divider-grey article h3 {
+/* Hero title area */
+header.cover h1,
+.site-hero-title {
+  color: #ffffff !important;
+  font-size: clamp(2.2rem, 5vw, 4.5rem) !important;
   font-weight: 700 !important;
-  line-height: 1.25 !important;
+  line-height: 1.05 !important;
+  max-width: 900px;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45);
 }
 
-/* Read more links */
-section article a,
-.divider-grey article a {
-  font-weight: 600;
+header.cover h2,
+.site-hero-description {
+  color: rgba(255, 255, 255, 0.88) !important;
+  font-size: clamp(1rem, 2vw, 1.45rem) !important;
+  max-width: 760px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* On large screens, hero text sits left but not hard against edge */
+@media screen and (min-width: 60em) {
+  header.cover .tc-l,
+  .site-hero-text {
+    text-align: left !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  header.cover h1,
+  header.cover h2,
+  .site-hero-title,
+  .site-hero-description {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
 }
 
 
 /* ---------------------------------------------------------
-   9. Footer
+   3. Navigation
+   --------------------------------------------------------- */
+
+.site-nav {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.site-nav-inner {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Logo */
+.site-logo {
+  width: 150px !important;
+  max-width: 150px !important;
+  height: auto !important;
+  display: block !important;
+}
+
+/* Menu */
+.site-menu-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.site-menu-item {
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.01em;
+}
+
+.site-menu-link {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+
+.site-menu-link:hover {
+  color: #ffffff !important;
+}
+
+/* Mobile navigation */
+@media screen and (max-width: 59.99em) {
+  .site-nav {
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+
+  .site-nav-inner {
+    display: block !important;
+  }
+
+  .site-logo {
+    width: 95px !important;
+    max-width: 95px !important;
+    margin-bottom: 1rem;
+  }
+
+  .site-menu {
+    display: block !important;
+  }
+
+  .site-menu-list {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem 1rem;
+  }
+
+  .site-menu-item {
+    display: inline-block !important;
+    padding-right: 0 !important;
+    font-size: 1rem !important;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   4. Main content layout
+   --------------------------------------------------------- */
+
+/* Normal content pages */
+main article,
+main .nested-copy-line-height,
+main .nested-links {
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Do not centre all text by default */
+main article p,
+main article ul,
+main article ol,
+main article li {
+  text-align: left !important;
+}
+
+/* Keep main article headings clean */
+main article h1,
+main article h2,
+main article h3 {
+  text-align: left !important;
+}
+
+/* Better spacing between sections */
+main article h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+main article p {
+  margin-top: 0;
+  margin-bottom: 1.35rem;
+}
+
+
+/* ---------------------------------------------------------
+   5. Homepage-specific improvements
+   --------------------------------------------------------- */
+
+/* Homepage intro copy should be readable and not too wide */
+.home-content,
+main > article:first-child {
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* If Ananke applies tc-l to body content, neutralise it only in main */
+main .tc,
+main .tc-l {
+  text-align: left !important;
+}
+
+/* But do not accidentally wreck header alignment */
+header .tc,
+header .tc-l {
+  text-align: inherit;
+}
+
+
+/* ---------------------------------------------------------
+   6. News listing/cards
+   --------------------------------------------------------- */
+
+/* News/listing pages need a wider canvas than ordinary article pages */
+section.w-100,
+section.flex-ns,
+section.cf,
+.pa3.pa4-ns.w-100.w-70-ns.center {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Recent news cards */
+article h1,
+article h2 {
+  word-break: normal;
+}
+
+/* Listing card headings */
+article h1 a,
+article h2 a,
+.summary-title,
+.f3 a,
+.f2 a {
+  color: #111111 !important;
+  text-decoration: none;
+}
+
+article h1 a:hover,
+article h2 a:hover,
+.summary-title:hover,
+.f3 a:hover,
+.f2 a:hover {
+  color: #5a2d82 !important;
+}
+
+/* News summaries */
+.summary,
+article .nested-links p {
+  color: #555555;
+}
+
+/* Make news cards less cramped */
+.w-100.w-30-l,
+.w-100.w-30-ns,
+.w-30-l {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+
+/* ---------------------------------------------------------
+   7. Images
+   --------------------------------------------------------- */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main article img {
+  border-radius: 6px;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+
+/* ---------------------------------------------------------
+   8. Footer
    --------------------------------------------------------- */
 
 footer {
   font-size: 0.95rem;
+  color: #666666;
 }
 
 footer a {
-  color: #ffffff;
+  color: #5a2d82;
 }
 
 
 /* ---------------------------------------------------------
-   10. Small-screen refinements
+   9. Mobile adjustments
    --------------------------------------------------------- */
 
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 59.99em) {
   body {
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  p,
+  li {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  header.cover,
+  .site-hero {
+    min-height: 470px;
+    background-position: center center !important;
+  }
+
+  header.cover > div,
+  .site-hero-overlay {
+    min-height: 470px;
   }
 
   header.cover h1,
   .site-hero-title {
-    font-size: 2rem !important;
+    font-size: 2.15rem !important;
+    line-height: 1.1 !important;
   }
 
   header.cover h2,
   .site-hero-description {
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
   }
 
-  .site-hero-overlay,
-  header.cover > div {
-    min-height: 320px;
+  main article,
+  main .nested-copy-line-height,
+  main .nested-links {
+    max-width: 100%;
   }
 
-  main h1 {
-    font-size: 2rem !important;
+  main article {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
-  main h2 {
-    font-size: 1.5rem !important;
+  main article h1,
+  main article h2,
+  main article h3 {
+    text-align: left !important;
   }
 }
 
 
 /* ---------------------------------------------------------
-   11. Emergency overrides for Ananke / Tachyons
+   10. Desktop refinements
    --------------------------------------------------------- */
 
-/* These stop desktop-only Tachyons classes undoing the custom look. */
-
 @media screen and (min-width: 60em) {
-  .f-subheadline-l {
-    font-size: 3.5rem !important;
+  main {
+    padding-top: 2rem;
   }
 
-  .pv6-l {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
+  main article {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
-  .center {
-    margin-left: auto;
-    margin-right: auto;
+  /* Keep ordinary page headers centred unless they are hero overlays */
+  header:not(.cover) h1,
+  header:not(.cover) h2 {
+    text-align: center !important;
   }
 
-  header .center {
-    margin-left: 0 !important;
-    margin-right: auto !important;
+  /* Keep news/listing pages from becoming too narrow */
+  .mw8,
+  .mw7 {
+    max-width: 980px;
   }
+}
+
+
+/* ---------------------------------------------------------
+   11. Emergency overrides for old inline styles / Ananke quirks
+   --------------------------------------------------------- */
+
+/* Stop oversized logo caused by old inline styles */
+.site-logo-link img,
+nav img.site-logo {
+  width: 150px !important;
+  max-width: 150px !important;
+  height: auto !important;
+}
+
+@media screen and (max-width: 59.99em) {
+  .site-logo-link img,
+  nav img.site-logo {
+    width: 95px !important;
+    max-width: 95px !important;
+  }
+}
+
+/* Prevent old global centring from affecting body copy */
+main p,
+main li {
+  text-align: left !important;
+}
+
+/* But keep the hero title deliberately styled */
+header.cover p,
+header.cover li {
+  text-align: inherit !important;
 }
