@@ -88,6 +88,7 @@ img {
         font-size: 1.05rem;
     }
 }
+
 /* =========================================
    HEADER LOGO SIZE
 ========================================= */
@@ -110,10 +111,10 @@ img[src*="logo"] {
    HERO IMAGE POSITIONING
 ========================================= */
 
-/* Stop aggressive zoom/crop */
+/* Base hero background behaviour */
 .bg-top {
     background-size: cover;
-    background-position: center center;
+    background-position: center 30%;
 }
 
 /* Taller hero so image crops less */
@@ -121,12 +122,9 @@ img[src*="logo"] {
     min-height: 60vh;
 }
 
-/* Optional: even less zoom */
+/* Desktop enhancement */
 @media (min-width: 1000px) {
     .cover {
         min-height: 70vh;
     }
-.bg-top {
-    background-size: cover;
-    background-position: center 30%;
 }
