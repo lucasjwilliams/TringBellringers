@@ -1,13 +1,25 @@
 ---
 title: "Welcome to Tring Bellringers"
-description: "We are the local group that ring the bells at St Peter & Paul."
+description: "We ring the bells at St Peter & St Paul’s Church in the heart of Tring."
 featured_image: "images/bells_up.png"
 ---
-We are a friendly and diverse group that enjoy the unique and challenging hobby of bell ringing. This website should give you a good idea about us but if you have any questions please don't hesitate to [contact us]({{< ref "contact">}}).
 
-![Members of Tring Ringers](/images/Band2025.jpg)
+We are the local band of bellringers at St Peter & St Paul’s Church, Tring. We ring for Sunday services, weddings, special occasions and national events — and we are always pleased to welcome new people.
 
-You can find out about the fasinating history of the tower, bells and clock in the [about]({{< ref "about">}}) section.
+Bellringing is a unique mix of music, rhythm, teamwork and tradition. It is sociable, absorbing and surprisingly challenging, but you do not need to be musical, especially strong, or a regular churchgoer to learn. If you are curious, the best thing to do is come and see what happens in the tower.
 
-If you're considering joining us, whether as an experienced ringer or a new recruit, we would be very happy to welcome you. Bell ringing is a struggling art so the more the merrier, check out the [join]({{< ref "join-us">}}) section for the details.
+<img src="/images/Band2025.jpg" alt="Members of Tring Bellringers" class="homepage-band-photo">
 
+## Come and see us
+
+New ringers are very welcome, whether you have never touched a bell rope before or are returning after time away. We practise regularly and can help beginners learn safely and steadily.
+
+Find out more in our [Join us]({{< ref "join-us">}}) section, or [contact us]({{< ref "contact">}}) if you would like to ask a question or arrange a visit.
+
+## About the tower
+
+The bells at Tring have a long and fascinating history. You can read more about the tower, bells and clock in the [About]({{< ref "about">}}) section.
+
+## Weddings and special occasions
+
+We also ring for weddings and other special services at St Peter & St Paul’s. Visit our [Weddings]({{< ref "weddings">}}) page for more information.
