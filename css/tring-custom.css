@@ -84,6 +84,45 @@ main li,
     .page-content li {
         font-size: 1.05rem;
     }
+   /* Homepage intro block */
+main > h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+}
+
+main > h2 {
+    font-size: 1.45rem;
+    font-weight: 500;
+    line-height: 1.35;
+    margin-bottom: 1.5rem;
+    color: #3a3a3a;
+}
+
+/* Homepage intro paragraphs */
+main > p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+/* News/article paragraph consistency */
+article p,
+article li,
+main p,
+main li {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+/* News teaser text on homepage */
+main .summary,
+main .f6,
+main .f5 {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+}
 }
 /* Images */
 main img {
