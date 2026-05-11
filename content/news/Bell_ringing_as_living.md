@@ -36,7 +36,7 @@ This article appeared in the February 2026 edition of *The Ringing World*, along
 [Read the issue online →](https://bb.ringingworld.co.uk/issueno/5992)
 
 {{< figure 
-    src="/images/ringing-world.jpg" 
+    src="/images/Ringing-World.jpg" 
     alt="Cover of The Ringing World February 2026 edition"
     caption="The Ringing World — February 2026 edition"
 >}}
