@@ -21,27 +21,6 @@ h1, h2, h3, h4 {
     line-height: 1.2;
 }
 
-/* Hero text positioning */
-.cover .pv5,
-.cover .pv6 {
-    padding-left: 4rem;
-}
-
-.cover h1 {
-    font-size: 4rem;
-    font-weight: 700;
-}
-
-.cover p {
-    font-size: 1.5rem;
-}
-
-/* Navigation */
-nav a {
-    font-weight: 500;
-    letter-spacing: 0.02em;
-}
-
 /* Reduce excessive bottom padding added by theme */
 main.pb7 {
     padding-bottom: 2rem;
@@ -67,27 +46,12 @@ td, th {
 }
 
 /* Images */
-img {
+main img {
     border-radius: 4px;
 }
 
 /* Mobile adjustments */
 @media screen and (max-width: 768px) {
-
-    .cover .pv5,
-    .cover .pv6 {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
-
-    .cover h1 {
-        font-size: 2.5rem;
-    }
-
-    .cover p {
-        font-size: 1.2rem;
-    }
-
     main p,
     main li {
         font-size: 1.05rem;
