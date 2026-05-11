@@ -40,6 +40,7 @@ Current officers include:
 | Deputy Tower Captain | Christian Scharsach |
 | Treasurer | Cathy Anderson |
 | Steeple Keeper | Jonathan Smith |
+| Deputy Steeple Keeper | Will Yendell |
 | Secretary | Sally Smith |
 
 The wider band also includes experienced ringers, learners and occasional visitors, all of whom help make the tower a welcoming place to ring.
