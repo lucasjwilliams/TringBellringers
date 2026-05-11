@@ -44,6 +44,32 @@ td, th {
     text-align: left;
 }
 
+/* Make homepage and news body text consistent */
+main p,
+main li,
+.site-content p,
+.site-content li,
+.home p,
+.home li,
+.page-content p,
+.page-content li {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #2b2b2b;
+}
+@media screen and (max-width: 768px) {
+    main p,
+    main li,
+    .site-content p,
+    .site-content li,
+    .home p,
+    .home li,
+    .page-content p,
+    .page-content li {
+        font-size: 1.05rem;
+    }
+}
 /* Images */
 main img {
     border-radius: 4px;
