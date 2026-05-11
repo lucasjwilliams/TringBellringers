@@ -19,7 +19,7 @@ googleAnalytics = "G-DVSMVMTXEQ"
   favicon = "images/logo.png"
   site_logo = "images/logo.png"
   description = "Home of the Tring church bell ringers"
-  background_color_class = "bg-silver"
+  background_color_class = "bg-tring"
   recent_posts_number = 1
   custom_css = ["css/tring-custom.css"]
 
