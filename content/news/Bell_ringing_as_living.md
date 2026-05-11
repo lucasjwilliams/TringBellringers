@@ -28,3 +28,15 @@ The first UK representative to UNESCO, the writer J. B. Priestley, wrote during 
 Living heritage survives in the same way. Because people choose, again and again, to turn up.
 
 And on a Tuesday night in Tring, that choice still rings loud.
+
+## Published in *The Ringing World*
+
+This article appeared in the February 2026 edition of *The Ringing World*, alongside an article by Matt on the UK’s ratification of the UNESCO 2003 Convention for the Safeguarding of the Intangible Cultural Heritage and what this could mean for bellringing and living heritage in the UK.
+
+[Read the issue online →](https://bb.ringingworld.co.uk/issueno/5992)
+
+{{< figure 
+    src="/images/ringing-world.jpg" 
+    alt="Cover of The Ringing World February 2026 edition"
+    caption="The Ringing World — February 2026 edition"
+>}}
