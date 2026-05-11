@@ -25,7 +25,7 @@ Dove’s Guide provides technical details about the bells at Tring, including th
 
 You can find records of quarter peals and peals rung at Tring through BellBoard.
 
-[View ringing performances at Tring](https://bb.ringingworld.co.uk/search?dove_tower=15131&length=q-or-p))
+[View ringing performances at Tring](https://bb.ringingworld.co.uk/search?dove_tower=15131&length=q-or-p)
 
 ### St Peter & St Paul’s Church, Tring
 

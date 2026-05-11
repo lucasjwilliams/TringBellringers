@@ -5,7 +5,7 @@ description: "An article first published in The Ringing World, reflecting on lea
 featured_image: "images/Tring-Aerial.jpg"
 ---
 
-<b>This article first appeared in the February 2026 edition of <a href="https://bb.ringingworld.co.uk/issueno/5992">*The Ringing World*</a>. It was published alongside an article by Matt Rabagliati on the UK’s ratification of the UNESCO 2003 Convention for the Safeguarding of the Intangible Cultural Heritage, and what this could mean for bell ringing.</b>
+This article first appeared in the February 2026 edition of [*The Ringing World*](https://bb.ringingworld.co.uk/issueno/5992). It was published alongside an article by Matt Rabagliati on the UK’s ratification of the UNESCO 2003 Convention for the Safeguarding of the Intangible Cultural Heritage, and what this could mean for bell ringing.
 
 For the past seven months, I have entered the world of bell ringing in my local tower in Tring, Hertfordshire.
 
@@ -33,7 +33,7 @@ And on a Tuesday night in Tring, that choice still rings loud.
 
 This article appeared in the February 2026 edition of *The Ringing World*, alongside an article by Matt on the UK’s ratification of the UNESCO 2003 Convention for the Safeguarding of the Intangible Cultural Heritage and what this could mean for bellringing and living heritage in the UK.
 
-[Read the issue online →](https://bb.ringingworld.co.uk/issueno/5992)
+[Read the full issue →](/files/5992.pdf)
 
 {{< figure 
     src="/images/Ringing-World.jpg" 

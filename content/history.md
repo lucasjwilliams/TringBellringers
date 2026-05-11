@@ -65,7 +65,7 @@ Another famous change is 1-2-7-5-3-4-6-8 called “Whittingtons” because the t
 | 7    | 1624[^3] | Robert Oldfield      | 14-0-27 (723kg)| 45.81" (116cm)           |
 | 8    | 1695[^3] | Richard III Chandler | 17-3-18 (905kg)| 50.50" (128cm)           |
 
-With nearly 5 tons of metal swinging back and forth, a lot of stress has to be absorbed by both the frame (which itself weighs nearly 4 tons) and the stone tower.  To minimise the strain, the treble, tenor, 4 and 5, totalling just over 2 tons, swing east-west while the other 4 bells, totalling just under 2 tons, swing north- south.
+With nearly 5 tons of metal swinging back and forth, a lot of stress has to be absorbed by both the frame (which itself weighs nearly 4 tons) and the stone tower.  To minimise the strain, the treble, tenor, 4 and 5, totalling just over 2 tons, swing east-west while the other 4 bells, totalling just under 2 tons, swing north-south.
 
 ## History
 
@@ -93,7 +93,7 @@ and 2nd  “I WAS GLAD WHEN THEY SAID UNTO ME LET US GO INTO THE HOUSE OF THE LO
 
 A clock which played tunes on the bells at every hour was installed in 1753 and the inner dial showing the names of the churchwardens now hangs in the ringing chamber.  This was replaced in 1882 by Gillett and Bland with a clock, with Westminster chimes at every quarter. John Clement, a local clock-maker, drew up the plans for the clock. The Clement family, who carried on a clock-makers business in the town continuously from at least 1782 until 1959, maintained the clock throughout this period.
 
-The clock was driven by a gravity weights which meant that these weights had to be wound up by hand every few days to keep the clock going.  In the late 1970s the drive was converted with synchronous and direct electric drive to the strike and quarters.
+The clock was driven by gravity weights which meant that these weights had to be wound up by hand every few days to keep the clock going.  In the late 1970s the drive was converted with synchronous and direct electric drive to the strike and quarters.
 
 {{< figure src="/images/clock_mechanism.jpeg" >}}
 
