@@ -1,7 +1,7 @@
 ---
 title: Weddings
 featured_image: "images/wedding.jpg"
-description: We are honoured to be able to ring for weddings at Tring church.
+description: We are honoured to be able to ring for weddings at Tring church
 ---
 
 We are honoured to ring for weddings at St Peter & St Paul’s Church, Tring.
