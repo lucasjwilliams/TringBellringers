@@ -3,9 +3,6 @@ title: About us
 featured_image: "images/band2025-new.jpg"
 description: "The ringers of St Peter & St Paul, Tring"
 ---
-
-# About Tring Bellringers
-
 Tring Bellringers are the local band who ring the bells at St Peter & St Paul’s Church in Tring.
 
 We are a friendly group of ringers of different ages, backgrounds and levels of experience. Some of us have rung for many years, while others have only recently started learning. Together, we ring for Sunday services, weddings, civic occasions, national events and regular practices.
