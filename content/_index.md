@@ -9,7 +9,7 @@ Bellringing is a unique mix of music, rhythm, teamwork and tradition. It is soci
 
 If you are curious, come and see what happens in the tower.
 
-[Find out about learning to ring →](/join/)
+[Find out about learning to ring →](/join-us/)
 
 [Read about the history of the bells →](/history/)
 
