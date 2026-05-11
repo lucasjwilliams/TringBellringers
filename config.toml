@@ -36,6 +36,8 @@ googleAnalytics = "G-DVSMVMTXEQ"
     name = "Join"
     url = "/join-us/"
     weight = 20
+    [menu.main.params]
+      class = "nav-cta"
 
   [[menu.main]]
     name = "News"
