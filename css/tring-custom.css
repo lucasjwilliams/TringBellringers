@@ -85,6 +85,21 @@ main img {
     width: 95px;
     height: auto;
     display: block;
+    transform-origin: top center;
+    transition: transform 0.1s ease;
+}
+
+.site-logo-link:hover .site-logo {
+    animation: bell-jangle 0.5s ease;
+}
+
+@keyframes bell-jangle {
+    0%   { transform: rotate(0deg); }
+    20%  { transform: rotate(12deg); }
+    40%  { transform: rotate(-10deg); }
+    60%  { transform: rotate(8deg); }
+    80%  { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
 }
 
 .site-menu {
@@ -175,6 +190,10 @@ main img {
     height: 100%;
 }
 
+.site-hero-overlay h1 {
+    font-weight: 750;
+}
+
 @media screen and (max-width: 60em) {
     .hamburger-btn {
         display: flex;
@@ -232,5 +251,9 @@ main img {
 
     .site-hero {
         height: 240px;
+    }
+
+    .site-logo {
+        width: 65px;
     }
 }
