@@ -20,4 +20,4 @@ We hope that, amid all the excitement of your day, you and your guests will have
 
 To discuss wedding bells, please contact our Wedding Bells coordinator, Cathy Anderson, at:
 
-[contact@tringbells.org](mailto:contact@tringbells.org)
+[andersonr312@aol.com](mailto:andersonr312@aol.com)
