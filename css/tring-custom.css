@@ -2,9 +2,8 @@
    TRING BELLRINGERS CUSTOM STYLES
    ========================================= */
 
-/* Typography */
 body {
-    font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
     line-height: 1.7;
     color: #2b2b2b;
 }
@@ -17,7 +16,7 @@ body {
 
 /* Headings */
 h1, h2, h3, h4 {
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.2;
 }
 
