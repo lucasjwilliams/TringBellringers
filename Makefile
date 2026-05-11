@@ -1,7 +1,7 @@
 .PHONY: dev build clean
 
 dev:
-	hugo server --buildDrafts --bind 0.0.0.0 --poll 500ms
+	hugo server --buildDrafts --bind 0.0.0.0 --poll 500ms --disableFastRender
 
 build:
 	hugo

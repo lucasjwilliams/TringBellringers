@@ -1,7 +1,7 @@
 title = "Tring Bellringers"
 baseURL = "https://tringbells.org/"
 languageCode = "en-us"
-theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
+theme = ["ananke"]
 resourceDir = "../resources"
 
 DefaultContentLanguage = "en"
@@ -16,7 +16,7 @@ googleAnalytics = "G-DVSMVMTXEQ"
 [params]
   text_color = ""
   author = ""
-  favicon = "images/logo.png"
+  favicon = "images/favicon.png"
   site_logo = "images/logo.png"
   description = "Home of the Tring church bell ringers"
   background_color_class = "bg-tring"
