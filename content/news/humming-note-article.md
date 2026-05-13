@@ -2,7 +2,7 @@
 title: "The humming note of church bells"
 date: 2026-05-13
 description: "An article from Tring Bell Tower by Johanna Morgan about the deep humming note of church bells, Great Paul at St Paul’s Cathedral, and the sound of bells rung muffled for remembrance and funerals."
-featured_image: "images/bellstack"
+featured_image: "images/bellstack.jpg"
 ---
 
 The bell with the deepest sounding note in the U.K. is Great Paul at St Paul's Cathedral in London. It was cast in 1881 and its note is E-flat. It weighs 16.75 imperial tons and is the largest bell in the U.K. in current use, and is the largest that is hung for ringing. It makes a low, deep humming tone when rung.
