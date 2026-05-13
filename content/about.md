@@ -42,6 +42,7 @@ Current officers include:
 | Steeple Keeper | Jonathan Smith |
 | Deputy Steeple Keeper | Will Yendell |
 | Secretary | Sally Smith |
+| Web Editor | Lucas Williams |
 
 The wider band also includes experienced ringers, learners and occasional visitors, all of whom help make the tower a welcoming place to ring.
 
