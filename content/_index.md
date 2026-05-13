@@ -1,7 +1,7 @@
 ---
 title: "Welcome to Tring Bellringers"
 description: "We ring the bells at St Peter & St Paul’s Church in the heart of Tring."
-featured_image: "images/bells_up.png"
+featured_image: "images/bells2026.jpg"
 ---
 We are the bellringers of St Peter & St Paul’s Church, Tring. We ring for weddings, civic occasions, services, national events and, most importantly, for fun! We are always pleased to welcome new ringers and visitors.
 
