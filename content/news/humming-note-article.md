@@ -1,6 +1,6 @@
 ---
 title: "The humming note of church bells"
-date: 2026-05-01
+date: 2026-05-13
 description: "An article from Tring Bell Tower by Johanna Morgan about the deep humming note of church bells, Great Paul at St Paul’s Cathedral, and the sound of bells rung muffled for remembrance and funerals."
 featured_image: "images/bellstack"
 ---
