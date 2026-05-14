@@ -43,6 +43,7 @@ Current officers include:
 | Deputy Steeple Keeper | Will Yendell |
 | Secretary | Sally Smith |
 | Web Editor | Lucas Williams |
+| Father of the Tower (Hon.) | Howard Collings |
 
 The wider band also includes experienced ringers, learners and occasional visitors, all of whom help make the tower a welcoming place to ring.
 
