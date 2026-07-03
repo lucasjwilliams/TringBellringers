@@ -19,13 +19,12 @@ The bells were to be rung in reverse rounds to create an unmistakable warning. I
 
 Here at Tring Bell Tower, we have recently added a video link from the ringing room to the bells in the belfry above. This means that ringers can now see how the bells move when they pull the ropes.
 
-The installation is thanks to bellringer Will, who had the idea and made it happen: “He who has the vision gets the mission!” It is especially useful for new ringers, who can sometimes find it difficult to imagine exactly how the bells above their heads are moving.
+The installation is thanks to bellringer Will, who had the idea and made it happen: "He who has the vision gets the mission!" It is especially useful for new ringers, who can sometimes find it difficult to imagine exactly how the bells above their heads are moving.
 
 Come along on any Tuesday at 7pm to the church door — but please let us know first at:
 
 tringbells@gmail.com
 
-Johanna Morgan
+**Johanna Morgan**
 
-Tring Bell Tower
----
+**Tring Bell Tower**
