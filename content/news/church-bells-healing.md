@@ -1,4 +1,4 @@
-⸻
+---
 title: “Church bells: healing, protection and alarm”
 date: 2026-07-03
 description: “An article from Tring Bell Tower by Johanna Morgan exploring historic beliefs about church bells, from protection and healing to wartime alarms, and a new video link in the ringing room.”
@@ -27,3 +27,4 @@ tringbells@gmail.com
 Johanna Morgan
 
 Tring Bell Tower
+---
