@@ -1,8 +1,9 @@
 ---
-title: “Church bells: healing, protection and alarm”
+title: 'Church bells: healing, protection and alarm'
 date: 2026-07-03
-description: “An article from Tring Bell Tower by Johanna Morgan exploring historic beliefs about church bells, from protection and healing to wartime alarms, and a new video link in the ringing room.”
-featured_image: “images/bellstack.jpg”
+description: 'An article from Tring Bell Tower by Johanna Morgan exploring historic beliefs about church bells, from protection and healing to wartime alarms, and a new video link in the ringing room.'
+featured_image: 'images/bellstack.jpg'
+---
 
 Early church bells were far more than timekeepers or calls to worship. They were widely believed to possess special properties: able to heal the sick, protect communities and ward off evil.
 
