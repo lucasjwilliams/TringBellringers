@@ -2,7 +2,7 @@
 title: "A day at the John Taylor Bell Foundry"
 date: 2026-07-20
 description: "A summer outing with the Tring and Berkhamsted bellringers to churches across Leicestershire, culminating in a visit to the historic John Taylor Bell Foundry in Loughborough."
-featured_image: "images/grouptaylor.jpg"
+featured_image: "images/taylorsign.jpg"
 ---
 
 One of the great pleasures of learning to ring has been discovering the wider community of bellringers beyond my own local tower.
