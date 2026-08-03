@@ -24,9 +24,12 @@ Lunch followed at the Three Nuns in Loughborough before the highlight of the aft
 As the only working bell foundry remaining in the United Kingdom, it was extraordinary to see how bells are made. Huge machinery, blazing furnaces, molten metal, steam, sparks and noise created a dramatic contrast to the peaceful Hertfordshire villages from which we had travelled.
 
 {{< figure
-    src="/images/sparks.jpg"
-    alt="Casting bells at the John Taylor Bell Foundry"
-    caption="Bell casting at the John Taylor Bell Foundry, Loughborough. Photograph: Matt Rabagliati."
+
+    src="/images/grouptaylor.jpg"
+    alt="Tour of the foundry"
+    caption="Visitors touring the foundry"
+    attr="Matt Rabagliati"
+
 >}}
 
 The foundry also has its own ringing tower, housing a lightweight ring of twelve bells. Ringing on twelve bells is considerably quicker than ringing on the eight at Tring and took a little getting used to, but the band soon adapted and thoroughly enjoyed the experience. We wondered how many bellringers have the opportunity to ring in the country's only working bell foundry.
