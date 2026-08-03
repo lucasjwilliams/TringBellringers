@@ -31,7 +31,7 @@ Lunch followed at the Three Nuns in Loughborough before the highlight of the aft
 As the only working bell foundry remaining in the United Kingdom, it was extraordinary to see how bells are made. Huge machinery, blazing furnaces, molten metal, steam, sparks and noise created a dramatic contrast to the peaceful Hertfordshire villages from which we had travelled.
 
 {{< figure
-    src="/images/grouptaylor.jpg"
+    src="/images/sparks.jpg"
     alt="Casting bells at the John Taylor Bell Foundry"
     caption="Bell casting at the John Taylor Bell Foundry, Loughborough. Photograph: Matt Rabagliati."
 >}}
