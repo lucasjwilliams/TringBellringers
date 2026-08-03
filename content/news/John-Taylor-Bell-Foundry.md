@@ -44,7 +44,6 @@ The foundry also has its own ringing tower, housing a lightweight ring of twelve
     caption="Bell casting at the John Taylor Bell Foundry, Loughborough. Photograph: Matt Rabagliati."
 >}}
 
-
 Our penultimate tower was **St James the Greater, Oaks in Charnwood**. Originally built in 1815 and consecrated on the day of the Battle of Waterloo, the church was rebuilt in local Charnwood stone in 1883. One of its most striking features is a collection of lances mounted on the walls, said to have been recovered from the Waterloo battlefield.
 
 The final stop was **St Peter's, Copt Oak**, whose mezzanine ringing chamber creates a light and airy space despite its modest size.
