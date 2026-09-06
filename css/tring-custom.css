@@ -1,0 +1,338 @@
+/* =========================================
+   TRING BELLRINGERS CUSTOM STYLES
+   ========================================= */
+
+body {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.7;
+    color: #2b2b2b;
+}
+
+/* Main content width */
+.measure-wide,
+.measure {
+    max-width: 820px;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    font-weight: 600;
+    line-height: 1.2;
+}
+/* Homepage intro text */
+main h2 {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.35;
+    color: #2b2b2b;
+}
+
+/* Homepage main heading */
+main h1 {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #2b2b2b;
+}
+
+/* Reduce excessive bottom padding added by theme */
+main.pb7 {
+    padding-bottom: 2rem;
+}
+
+/* Body text */
+main p,
+main li {
+    font-size: 1.15rem;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+td, th {
+    border-bottom: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+/* Make homepage and news body text consistent */
+main p,
+main li,
+.site-content p,
+.site-content li,
+.home p,
+.home li,
+.page-content p,
+.page-content li {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #2b2b2b;
+}
+@media screen and (max-width: 768px) {
+    main p,
+    main li,
+    .site-content p,
+    .site-content li,
+    .home p,
+    .home li,
+    .page-content p,
+    .page-content li {
+        font-size: 1.05rem;
+    }
+   /* Homepage intro block */
+main > h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+}
+
+main > h2 {
+    font-size: 1.45rem;
+    font-weight: 500;
+    line-height: 1.35;
+    margin-bottom: 1.5rem;
+    color: #3a3a3a;
+}
+
+/* Homepage intro paragraphs */
+main > p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+/* News/article paragraph consistency */
+article p,
+article li,
+main p,
+main li {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+/* News teaser text on homepage */
+main .summary,
+main .f6,
+main .f5 {
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+}
+}
+/* Images */
+main img {
+    border-radius: 4px;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+    main p,
+    main li {
+        font-size: 1.05rem;
+    }
+}
+
+.bg-tring {
+    background-color: #1e3a5f;
+}
+
+.site-topbar {
+    position: relative;
+    z-index: 100;
+}
+
+.site-nav {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.site-nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+.site-logo {
+    width: 95px;
+    height: auto;
+    display: block;
+    transform-origin: top center;
+    transition: transform 0.1s ease;
+}
+
+.site-logo-link:hover .site-logo {
+    animation: bell-jangle 0.5s ease;
+}
+
+@keyframes bell-jangle {
+    0%   { transform: rotate(0deg); }
+    20%  { transform: rotate(12deg); }
+    40%  { transform: rotate(-10deg); }
+    60%  { transform: rotate(8deg); }
+    80%  { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.site-menu {
+    display: flex;
+    align-items: center;
+}
+
+.site-menu-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-menu-item {
+    padding-right: 1.5rem;
+}
+
+.site-menu-link {
+    display: block;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 0.375rem 0.75rem;
+    white-space: nowrap;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.12);
+    transition: background 0.15s ease;
+}
+
+.site-menu-link:hover {
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff !important;
+}
+
+.hamburger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.hamburger-bar {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: transform 0.25s ease, opacity 0.2s ease;
+    transform-origin: center;
+}
+
+.hamburger-btn.is-active .hamburger-bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.hamburger-btn.is-active .hamburger-bar:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+.hamburger-btn.is-active .hamburger-bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.site-hero {
+    width: 100%;
+    height: 420px;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media screen and (min-width: 60em) {
+    .site-hero {
+        height: 580px;
+    }
+}
+
+.site-hero-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.site-hero-overlay h1 {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 60em) {
+    .hamburger-btn {
+        display: flex;
+        position: relative;
+        z-index: 300;
+    }
+
+    .site-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 200;
+        background: #1e3a5f;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        overflow-y: auto;
+    }
+
+    .site-menu.is-open {
+        display: flex;
+    }
+
+    .site-menu-list {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: auto 0;
+        padding: 1rem 0;
+    }
+
+    .site-menu-item {
+        padding-right: 0;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .site-menu-item:last-child {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .site-menu-link {
+        padding: 1rem 0;
+        background: none;
+        font-size: 1.25rem;
+    }
+
+    .site-menu-link:hover {
+        background: none;
+    }
+
+    .site-hero {
+        height: 240px;
+    }
+
+    .site-logo {
+        width: 65px;
+    }
+}
