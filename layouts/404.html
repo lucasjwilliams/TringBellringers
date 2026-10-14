@@ -1,0 +1,14 @@
+{{ define "header" }}
+  <header class="site-header" id="top">
+    <div class="site-topbar">{{ partial "site-navigation.html" . }}</div>
+  </header>
+{{ end }}
+{{ define "main" }}
+  <section class="section">
+    <div class="container container--narrow notfound">
+      <p class="eyebrow">Page not found</p>
+      <p class="article-lede">We couldn't find the page you were looking for. It may have moved, or the link may be out of date.</p>
+      <p><a class="btn btn--navy" href="{{ "/" | relURL }}">Back to the homepage</a></p>
+    </div>
+  </section>
+{{ end }}
