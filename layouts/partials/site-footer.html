@@ -1,8 +1,43 @@
-<footer class="{{ .Site.Params.background_color_class | default "bg-black" }} bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="{{ .Site.Home.RelPermalink }}" >
-    &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format "2006"}} {{ end }}
-  </a>
-    <div>{{ partial "social-follow.html" . }}</div>
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="{{ .Site.Home.RelPermalink }}" class="brand">
+        {{ with .Site.Params.site_logo }}<img src="{{ relURL . }}" class="brand-logo" alt="" width="56" height="56">{{ end }}
+        <span class="brand-text">
+          <span class="brand-name">{{ .Site.Title }}</span>
+        </span>
+      </a>
+      <p class="footer-note">The bellringers of Tring, always happy to welcome new ringers and visitors.</p>
+      <p class="footer-doc">
+        <a href="{{ "/files/tring-bellringers-society-constitution.pdf" | relURL }}" target="_blank" rel="noopener">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg>
+          Society constitution
+        </a>
+      </p>
+    </div>
+
+    <div>
+      <h2 class="footer-heading">Explore</h2>
+      <ul class="footer-list">
+        {{ range .Site.Menus.main }}
+          {{ if not (in (slice "Weddings" "Contact") .Name) }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="footer-heading">Get in touch</h2>
+      <ul class="footer-list">
+        {{ with .Site.Params.email }}<li><a href="mailto:{{ . }}">{{ . }}</a></li>{{ end }}
+        {{ with .Site.Params.phone }}<li><a href="tel:{{ replace . " " "" }}">{{ . }}</a> <span class="footer-muted">(Tower Captain)</span></li>{{ end }}
+        <li class="footer-muted">St Peter &amp; St Paul’s Church<br>Tring, Hertfordshire</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-base">
+    <span>&copy; {{ now.Format "2006" }} {{ .Site.Title }}</span>
+    <a href="#top" class="footer-top">Back to top ↑</a>
   </div>
 </footer>

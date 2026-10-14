@@ -1,0 +1,18 @@
+{{ $img := partial "img.html" (dict "src" .Params.featured_image "size" "800x webp q78") }}
+<article class="card">
+  <a class="card-link" href="{{ .RelPermalink }}">
+    <div class="card-media">
+      {{ if $img }}
+        <img src="{{ $img }}" alt="" loading="lazy"{{ if strings.HasSuffix (lower .Params.featured_image) ".png" }} class="card-media--contain"{{ end }}>
+      {{ else }}
+        <img src="{{ relURL .Site.Params.site_logo }}" alt="" class="card-media--placeholder" loading="lazy">
+      {{ end }}
+    </div>
+    <div class="card-body">
+      {{ if not .Date.IsZero }}<time class="card-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>{{ end }}
+      <h3 class="card-title">{{ .Title }}</h3>
+      <p class="card-summary">{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}</p>
+      <span class="card-more">Read more <span aria-hidden="true">→</span></span>
+    </div>
+  </a>
+</article>

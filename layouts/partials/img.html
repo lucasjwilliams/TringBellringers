@@ -1,0 +1,12 @@
+{{ $src := trim (.src | default "") "/" }}
+{{ $url := "" }}
+{{ with $src }}
+  {{ $url = . | relURL }}
+  {{ with resources.Get $src }}
+    {{ $target := int (index (findRE `^[0-9]+` $.size) 0) }}
+    {{ if and (in (slice "image/jpeg" "image/png" "image/webp") .MediaType.Type) (gt .Width $target) }}
+      {{ $url = (.Resize $.size).RelPermalink }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return $url }}

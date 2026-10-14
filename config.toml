@@ -1,17 +1,30 @@
 title = "Tring Bellringers"
 baseURL = "https://tringbells.org/"
-languageCode = "en-us"
+languageCode = "en-gb"
 theme = ["ananke"]
 resourceDir = "../resources"
 
 DefaultContentLanguage = "en"
-Paginate = 10
 googleAnalytics = "G-DVSMVMTXEQ"
+
+[pagination]
+  pagerSize = 12
 
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
   filename = "sitemap.xml"
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "static/images"
+    target = "assets/images"
 
 [params]
   text_color = ""
@@ -20,10 +33,25 @@ googleAnalytics = "G-DVSMVMTXEQ"
   site_logo = "images/favicon.png"
   description = "Home of the Tring church bell ringers"
   background_color_class = "bg-tring"
-  recent_posts_number = 1
+  body_classes = "tring"
+  mainSections = ["news"]
   custom_css = ["css/tring-custom.css"]
 
-  email = "info@tringbells.org"
+  email = "contact@tringbells.org"
+  phone = "07716 113034"
+
+  [[params.ringing_times]]
+    day = "Tuesday"
+    time = "19:00 – 20:00"
+    label = "Learners’ session"
+  [[params.ringing_times]]
+    day = "Tuesday"
+    time = "20:00 – 21:15"
+    label = "General practice"
+  [[params.ringing_times]]
+    day = "Sunday"
+    time = "09:30 – 10:00"
+    label = "Morning ringing"
 
 [menu]
 
@@ -31,13 +59,6 @@ googleAnalytics = "G-DVSMVMTXEQ"
     name = "About"
     url = "/about/"
     weight = 10
-
-  [[menu.main]]
-    name = "Join"
-    url = "/join-us/"
-    weight = 20
-    [menu.main.params]
-      class = "nav-cta"
 
   [[menu.main]]
     name = "News"
@@ -58,3 +79,10 @@ googleAnalytics = "G-DVSMVMTXEQ"
     name = "Contact"
     url = "/contact/"
     weight = 60
+
+  [[menu.main]]
+    name = "Learn to ring"
+    url = "/join/"
+    weight = 70
+    [menu.main.params]
+      class = "nav-cta"

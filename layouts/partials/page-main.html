@@ -1,0 +1,47 @@
+{{ if eq .Layout "contact" }}
+  <section class="section">
+    <div class="container intro">
+      <div class="prose page-prose">
+        {{ .Content }}
+      </div>
+      <div class="contact-aside">
+        <div class="contact-cards">
+          {{ with .Site.Params.email }}
+            <a class="contact-card" href="mailto:{{ . }}">
+              <span class="contact-card-label">Email</span>
+              <span class="contact-card-value">{{ . }}</span>
+            </a>
+          {{ end }}
+          {{ with .Site.Params.phone }}
+            <a class="contact-card" href="tel:{{ replace . " " "" }}">
+              <span class="contact-card-label">Tower Captain</span>
+              <span class="contact-card-value">{{ . }}</span>
+            </a>
+          {{ end }}
+        </div>
+        <aside class="times-card" aria-labelledby="times-heading">
+          <h2 id="times-heading" class="times-heading">When we ring</h2>
+          <ul class="times-list">
+            {{ range .Site.Params.ringing_times }}
+              <li>
+                <span class="times-day">{{ .day }}</span>
+                <span class="times-time">{{ .time }}</span>
+                <span class="times-label">{{ .label }}</span>
+              </li>
+            {{ end }}
+          </ul>
+          <p class="times-note">Access is normally via the West Door, at the bottom of the tower.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+{{ else }}
+  <section class="section">
+    <div class="container container--narrow">
+      <div class="prose page-prose">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+  {{ if not .Params.hide_cta }}{{ partial "cta.html" . }}{{ end }}
+{{ end }}

@@ -1,15 +1,13 @@
-<nav class="site-nav pv3 ph3 ph4-ns" role="navigation">
+{{ $current := .RelPermalink }}
+<nav class="site-nav" role="navigation" aria-label="Main">
   <div class="site-nav-inner">
-    <a href="{{ .Site.Home.RelPermalink }}" class="site-logo-link" aria-label="{{ $.Site.Title }} home">
+    <a href="{{ .Site.Home.RelPermalink }}" class="brand" aria-label="{{ .Site.Title }} home">
       {{ with .Site.Params.site_logo }}
-        <img
-          src="{{ relURL . }}"
-          class="site-logo"
-          alt="{{ $.Site.Title }}"
-        />
-      {{ else }}
-        <span class="f3 fw2 white-90">{{ .Site.Title }}</span>
+        <img src="{{ relURL . }}" class="brand-logo" alt="" width="56" height="56">
       {{ end }}
+      <span class="brand-text">
+        <span class="brand-name">{{ .Site.Title }}</span>
+      </span>
     </a>
 
     <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-menu">
@@ -19,19 +17,16 @@
     </button>
 
     <div class="site-menu" id="site-menu">
-      {{ partial "i18nlist.html" . }}
-      {{ if .Site.Menus.main }}
+      {{ with .Site.Menus.main }}
         <ul class="site-menu-list">
-          {{ range .Site.Menus.main }}
-            <li class="site-menu-item f5 fw4">
-              <a class="site-menu-link no-underline white-90 {{ with .Params.class }}{{ . }}{{ end }}" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
-                {{ .Name }}
-              </a>
+          {{ range . }}
+            {{ $active := and (ne $current "/") (hasPrefix $current .URL) }}
+            <li class="site-menu-item">
+              <a class="site-menu-link {{ with .Params.class }}{{ . }}{{ end }}{{ if $active }} is-current{{ end }}" href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
             </li>
           {{ end }}
         </ul>
       {{ end }}
-      {{ partialCached "social-follow.html" . }}
     </div>
   </div>
 </nav>
@@ -44,7 +39,7 @@
   if (!btn || !menu) return;
 
   function openMenu() {
-    menu.style.top = (topbar ? topbar.offsetHeight : 0) + 'px';
+    menu.style.top = (topbar ? topbar.getBoundingClientRect().bottom : 0) + 'px';
     menu.classList.add('is-open');
     btn.setAttribute('aria-expanded', 'true');
     btn.classList.add('is-active');
@@ -60,6 +55,9 @@
 
   btn.addEventListener('click', function () {
     menu.classList.contains('is-open') ? closeMenu() : openMenu();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && menu.classList.contains('is-open')) { closeMenu(); btn.focus(); }
   });
 })();
 </script>

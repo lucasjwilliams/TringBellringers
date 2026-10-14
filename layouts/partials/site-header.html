@@ -1,14 +1,23 @@
-<header>
-  <div class="site-topbar {{ .Site.Params.background_color_class | default "bg-black" }}">
+<header class="site-header" id="top">
+  <div class="site-topbar">
     {{ partial "site-navigation.html" . }}
   </div>
-  {{ $featured_image := partial "func/GetFeaturedImage.html" . }}
-  {{ if $featured_image }}
-    <div class="site-hero" style="background-image: url('{{ $featured_image }}');">
-      <div class="site-hero-overlay {{ .Site.Params.cover_dimming_class | default "bg-black-60" }}">
-        <div class="tc-l pv4 pv6-l ph3 ph4-ns site-hero-text">
-          <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">{{ .Title | default .Site.Title }}</h1>
-          {{ with .Params.description }}<h2 class="fw1 f5 f3-l white-80 measure-wide-l center mt3">{{ . }}</h2>{{ end }}
+  {{ $featured := .Params.featured_image }}
+  {{ if $featured }}
+    {{ $size := "2000x webp q75" }}
+    {{ with .Params.hero_pixelate }}{{ $size = printf "%dx q85" (int .) }}{{ end }}
+    {{ $bg := partial "img.html" (dict "src" $featured "size" $size) }}
+    <div class="site-hero{{ if .IsHome }} site-hero--home{{ end }}{{ if .Params.hero_tall }} site-hero--tall{{ end }}{{ if .Params.hero_pixelate }} site-hero--pixelated{{ end }}" style="background-image: url('{{ $bg }}');{{ with .Params.hero_position }} background-position: {{ . }};{{ end }}">
+      <div class="site-hero-overlay">
+        <div class="container site-hero-text">
+          <h1 class="hero-title">{{ .Title | default .Site.Title }}</h1>
+          {{ with .Params.description }}<p class="hero-lede">{{ . }}</p>{{ end }}
+          {{ if .IsHome }}
+            <div class="hero-actions">
+              <a class="btn btn--gold" href="{{ "/join/" | relURL }}">Learn to ring</a>
+              <a class="btn btn--ghost" href="{{ "/history/" | relURL }}">About the bells</a>
+            </div>
+          {{ end }}
         </div>
       </div>
     </div>

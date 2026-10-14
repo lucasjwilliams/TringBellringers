@@ -1,34 +1,57 @@
 {{ define "header" }}
-   {{/* We can override any block in the baseof file be defining it in the template */}}
-  {{ partial "page-header.html" . }}
-  
+  {{ if .Section }}
+    <header class="site-header" id="top">
+      <div class="site-topbar">{{ partial "site-navigation.html" . }}</div>
+    </header>
+  {{ else }}
+    {{ partial "site-header.html" . }}
+  {{ end }}
 {{ end }}
 
 {{ define "main" }}
-    
-  {{ $section := .Site.GetPage "section" .Section }}
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
-    
-    {{ if not .Date.IsZero }}
-      <time class="f6 mv4 dib tracked" {{ printf `datetime="%s"` (.Date.Format "2006-01-02T15:04:05Z07:00") | safeHTMLAttr }}>
-        {{- .Date | time.Format (default "January 2, 2006" .Site.Params.date_format) -}}
-      </time>
-    {{end}}
-    
-    <div class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes"  | default "serif"}} f4 nested-links {{ $.Param "text_color" | default "mid-gray" }} {{ cond (eq $.Site.Language.LanguageDirection "rtl") "pl4-l" "pr4-l" }} w-two-thirds-l">
-      {{- .Content -}}
-      {{- partial "tags.html" . -}}
-      <div class="mt6 instapaper_ignoref">
-      {{ if .Site.DisqusShortname }}
-        {{ template "_internal/disqus.html" . }}
+  {{ if not .Section }}
+    {{ partial "page-main.html" . }}
+  {{ else }}
+  <article class="article">
+    <header class="article-header container container--narrow">
+      {{ with .Site.GetPage "section" .Section }}
+        <a class="article-section" href="{{ .RelPermalink }}"><span aria-hidden="true">←</span> {{ .Title }}</a>
       {{ end }}
-      {{ if .Site.Params.commentoEnable }}
-        {{- partial "commento.html" . -}}
+      <h1 class="article-title">{{ .Title }}</h1>
+      {{ with .Description }}<p class="article-lede">{{ . }}</p>{{ end }}
+      <p class="article-meta">
+        {{ if not .Date.IsZero }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time><span aria-hidden="true"> · </span>{{ end }}
+        {{ .ReadingTime }} min read
+      </p>
+    </header>
+
+    {{ if not .Params.hide_featured }}
+      {{ with .Params.featured_image }}
+        {{ $img := partial "img.html" (dict "src" . "size" "1600x webp q80") }}
+        <figure class="article-figure container">
+          <img src="{{ $img }}" alt="">
+        </figure>
       {{ end }}
+    {{ end }}
+
+    <div class="container container--narrow">
+      <div class="prose">
+        {{ .Content }}
       </div>
     </div>
-
-    <aside class="w-30-l mt6-l">
-      {{- partial "menu-contextual.html" . -}}
   </article>
+
+  {{ $more := first 3 (where (where .Site.RegularPages "Section" .Section) "RelPermalink" "ne" .RelPermalink) }}
+  {{ with $more }}
+    <section class="section section--tint">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <h2 class="section-title">More from the tower</h2>
+          <a class="text-link" href="{{ "/news/" | relURL }}">All news <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="card-grid">{{ range . }}{{ partial "card.html" . }}{{ end }}</div>
+      </div>
+    </section>
+  {{ end }}
+  {{ end }}
 {{ end }}
