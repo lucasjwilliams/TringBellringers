@@ -2,7 +2,7 @@
 title: "Bell ringing as living heritage"
 date: 2026-04-01
 description: "An article first published in The Ringing World, reflecting on learning to ring at Tring and the value of bell ringing as living heritage."
-featured_image: "images/Tring-Aerial.jpg"
+featured_image: "images/old_band.jpg"
 ---
 
 This article first appeared in the February 2026 edition of [*The Ringing World*](https://bb.ringingworld.co.uk/issueno/5992). It was published alongside an article by Matt Rabagliati on the UK’s ratification of the UNESCO 2003 Convention for the Safeguarding of the Intangible Cultural Heritage, and what this could mean for bell ringing.
@@ -17,13 +17,13 @@ Looking at bell ringing through a living heritage lens has sharpened what I noti
 
 Each week, ten to fifteen of us gather in Tring tower to practise. We come from different professions, backgrounds and generations, united by a shared commitment to making something work together. No one can ring alone. Each person depends on the others. Teamwork and cooperation become, quite literally, audible.
 
-The intergenerational nature of the tradition is particularly striking. In many towers like Tring, the names of local ringers stretching back more than 150 years are recorded on boards lining the walls. Standing among them, you feel part of a long human chain, not of perfection — though ringing consistently for a three-hour peal is impressive — but of continuity. I hope that when my daughter is old enough to learn, she too might one day take hold of the rope.
+The intergenerational nature of the tradition is particularly striking. In many towers like Tring, the names of local ringers stretching back more than 150 years are recorded on boards lining the walls. Standing among them, you feel part of a long human chain, not of perfection (though ringing consistently for a three-hour peal is impressive) but of continuity. I hope that when my daughter is old enough to learn, she too might one day take hold of the rope.
 
 In this way, bell ringing carries the accumulated effort of generations. People turn up week after week, teach newcomers like myself, maintain equipment, practise local methods, and keep a shared practice alive. As society changes, and as the religious symbolism of churches continues to evolve, bell ringing also reveals new forms of value. It offers non-screen time, physical coordination, mental focus, teamwork and connection. These are increasingly rare experiences, and important for wellbeing and community cohesion.
 
 For all these reasons, bell ringing feels a very worthy candidate for recognition as part of the UK’s living heritage. Not because bell ringing needs to be placed on a pedestal, but because recognising it helps articulate the quiet truth that traditions often endure not through obligation, but through community.
 
-The first UK representative to UNESCO, the writer J. B. Priestley, wrote during his travels across England about the “Little England” — the small, local traditions quietly handed down, and deeply worth valuing.
+The first UK representative to UNESCO, the writer J. B. Priestley, wrote during his travels across England about the “Little England”: the small, local traditions quietly handed down, and deeply worth valuing.
 
 Living heritage survives in the same way. Because people choose, again and again, to turn up.
 
@@ -38,5 +38,5 @@ This article appeared in the February 2026 edition of *The Ringing World*, along
 {{< figure 
     src="/images/Ringing-World.jpg" 
     alt="Cover of The Ringing World February 2026 edition"
-    caption="The Ringing World — February 2026 edition"
+    caption="The Ringing World, February 2026 edition"
 >}}

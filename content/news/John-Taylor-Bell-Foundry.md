@@ -3,6 +3,7 @@ title: "A day at the John Taylor Bell Foundry"
 date: 2026-07-20
 description: "A summer outing with the Tring and Berkhamsted bellringers to churches across Leicestershire, culminating in a visit to the historic John Taylor Bell Foundry in Loughborough."
 featured_image: "images/grouptaylor.jpg"
+hide_featured: true
 ---
 
 One of the great pleasures of learning to ring has been discovering the wider community of bellringers beyond my own local tower.
@@ -16,7 +17,7 @@ In July, members of the Tring and Berkhamsted bands travelled together to Leices
 >}}
 
 
-The account below was written by Johanna Morgan for the local church newsletter.
+The account below was written by Johanna Morgan for the local newsletter.
 
 ---
 
@@ -50,6 +51,4 @@ The final stop was **St Peter's, Copt Oak**, whose mezzanine ringing chamber cre
 
 The journey home gave time for reflection on the long and enduring tradition of church bellringing, and the sense of connection it provides with generations past – something for which I am increasingly grateful.
 
-*Soli Deo Gloria* — Glory to God alone.
-
-— **Johanna Morgan**, Tring Bell Tower
+**Johanna Morgan**, Tring Bell Tower
