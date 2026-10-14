@@ -1,7 +1,7 @@
 ---
 title: History
-featured_image: "images/band1921.jpg"
-description: "The Tring Ringers in 1921"
+featured_image: "images/bellinscript.jpg"
+description: "Centuries of bells, ringers and tradition in Tring"
 ---
 
 Bellringing has been part of the life of St Peter & St Paul’s Church in Tring for centuries. This page tells the story of the bells, the clock, and the people who have rung here over the years. It also introduces the basics of full-circle ringing, the idea of “ringing the changes”, and the traditions that continue in the tower today.
@@ -11,7 +11,7 @@ Bellringing has been part of the life of St Peter & St Paul’s Church in Tring 
 Each bell is attached to its headstock which is supported on bearings on a frame so that the bell swings easily.   The earliest bells simply had an arm on the headstock to give leverage.  By pulling a rope attached to this arm, the ringer made a bell swing and the bell chimed each time its clapper hit one side or the other.   In continental Europe the use of bells swinging and chiming randomly is very prevalent.  It is only in England that the art of swinging the bell full circle has been developed fully.
 
 {{< figure src="/images/bell_diagram.jpg" >}}
-*Diagram of one of our bells [^1]*
+*Diagram of one of our bells*
 
 Early in the 17th century, wheels replaced arms in some belfries.   By attaching the rope to the wheel and with a groove in the rim of the wheel to retain the rope, the ringer could make a bell swing higher and higher until it could be balanced upside down with its mouth pointing to the sky.  At this point the bell becomes virtually weightless and the ringer could then determine when the bell would sound again.
 
@@ -19,7 +19,7 @@ The lightest bell, the treble, could sound first, followed by the next in the sc
 Bellringers call this ringing “rounds”.
 
 {{< figure src="/images/rounds.gif" >}}
-*What rounds looks like [^2]*
+*What rounds looks like*
 
 Being able to control when a bell sounds made changing the order in which bells sound easy, leading ringers to develop patterns (called methods) so that the bells changed the order in which they sounded each time without ringing the same sequence.  
 
@@ -60,10 +60,12 @@ Another famous change is 1-2-7-5-3-4-6-8 called “Whittingtons” because the t
 | 2    | 1882     | Gillett, Bland & Co  | 6-3-15 (324kg) | 32.32" (82cm)            |
 | 3    | 1636     | Ellis I Knight       | 7-3-21 (403kg) | 34.32" (87cm)            |
 | 4    | 1752     | Lester & Pack        | 9-1-21 (479kg) | 38.25" (97cm)            |
-| 5    | 1622[^3] | Robert Oldfield      | 9-1-20 (479kg) | 39.63" (100cm)           |
-| 6    | 1624[^3] | Robert Oldfield      | 11-1-21 (581kg)| 41.75" (106cm)           |
-| 7    | 1624[^3] | Robert Oldfield      | 14-0-27 (723kg)| 45.81" (116cm)           |
-| 8    | 1695[^3] | Richard III Chandler | 17-3-18 (905kg)| 50.50" (128cm)           |
+| 5*   | 1622     | Robert Oldfield      | 9-1-20 (479kg) | 39.63" (100cm)           |
+| 6*   | 1624     | Robert Oldfield      | 11-1-21 (581kg)| 41.75" (106cm)           |
+| 7*   | 1624     | Robert Oldfield      | 14-0-27 (723kg)| 45.81" (116cm)           |
+| 8*   | 1695     | Richard III Chandler | 17-3-18 (905kg)| 50.50" (128cm)           |
+
+\* Listed bell
 
 With nearly 5 tons of metal swinging back and forth, a lot of stress has to be absorbed by both the frame (which itself weighs nearly 4 tons) and the stone tower.  To minimise the strain, the treble, tenor, 4 and 5, totalling just over 2 tons, swing east-west while the other 4 bells, totalling just under 2 tons, swing north-south.
 
@@ -95,7 +97,7 @@ A clock which played tunes on the bells at every hour was installed in 1753 and 
 
 The clock was driven by gravity weights which meant that these weights had to be wound up by hand every few days to keep the clock going.  In the late 1970s the drive was converted with synchronous and direct electric drive to the strike and quarters.
 
-{{< figure src="/images/clock_mechanism.jpeg" >}}
+{{< figure src="/images/clock_mechanism.jpeg" alt="The clock mechanism at Tring" caption="The clock mechanism" >}}
 
 # Our Society
 
@@ -107,7 +109,9 @@ It is only since 1932 that Tring bells, like most other rings of bells, have bee
 
 Over the past four and a half centuries there must have been hundreds of bellringers who have rung at St Peter & Paul’s.  Mostly they will have lived in the town and, until the last hundred years, will have been men.   
 
-The aim of Tring Bellringing Society is to ensure that this tradition is carried forward to continue to call the people of Tring to worship God in this building and whenever else they may hear the sound of our bells.  At the same time we aim to have some fun and to enjoy ourselves.
+{{< figure src="/images/old_band.jpg" alt="The Tring bellringers in 1921" caption="The Tring ringers in 1921" >}}
+
+The aim of Tring Bellringing Society is to carry this tradition forward, so that the people of Tring continue to hear the sound of our bells for generations to come.  At the same time we aim to have some fun and to enjoy ourselves.
 
 There are about fifteen bellringers at Tring.  Although bellringing is a fairly physical exercise, once you have learned how to handle a bell it will normally take more effort to climb the forty stairs to the ringing chamber than to ring a bell itself.
 
@@ -116,6 +120,3 @@ It usually takes about twelve lessons to learn to handle a bell. Once you are ab
 If you are interested to find out more, or would just like to have a go, please [contact us]({{< ref "contact">}})!
 
 
-[^1]: Source: https://www.richmondbells.org/index.php/richmond-bells-bellringing
-[^2]: Source: https://fortran.orpheusweb.co.uk/Bells/software/rounds.htm
-[^3]: These bells are Listed

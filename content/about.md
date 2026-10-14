@@ -1,6 +1,9 @@
 ---
 title: About us
-featured_image: "images/band2025-new.jpg"
+featured_image: "images/about-band.jpg"
+hero_position: "center 45%"
+hero_tall: true
+hero_pixelate: 1000
 description: "The ringers of St Peter & St Paul, Tring"
 ---
 Tring Bellringers are the local band who ring the bells at St Peter & St Paul’s Church in Tring.
@@ -13,7 +16,7 @@ Bellringing is a unique mix of music, teamwork, rhythm, concentration and physic
 
 We usually ring:
 
-- **Tuesday evenings** — practice night  
+- **Tuesday evenings**: practice night  
   - 19:00–20:00 learners’ session  
   - 20:00–21:15 general practice
 
@@ -42,8 +45,7 @@ Current officers include:
 | Steeple Keeper | Jonathan Smith |
 | Deputy Steeple Keeper | Will Yendell |
 | Secretary | Sally Smith |
-| Web Editor | Lucas Williams |
-| Father of the Tower (Hon.) | Howard Collings |
+| Web Editor | [Lucas Williams](https://lucasw.uk) |
 
 The wider band also includes experienced ringers, learners and occasional visitors, all of whom help make the tower a welcoming place to ring.
 

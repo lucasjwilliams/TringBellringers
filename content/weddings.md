@@ -1,6 +1,7 @@
 ---
 title: Weddings
 featured_image: "images/wedding.jpg"
+hero_position: "center 24%"
 description: We are honoured to be able to ring for weddings at Tring church
 ---
 

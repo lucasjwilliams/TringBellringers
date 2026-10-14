@@ -1,6 +1,9 @@
 ---
 title: Join us
-featured_image: "images/Band2025.jpg"
+url: /join/
+aliases: ["/join-us/"]
+featured_image: "images/new_band.jpg"
+hero_position: "center 30%"
 description: We welcome visitors, new ringers and anyone curious about learning to ring.
 ---
 
@@ -47,6 +50,6 @@ Our usual repertoire includes:
 
 ## Sunday service ringing
 
-**09:30–10:00** — Before the main Sunday service
+**09:30–10:00**: before the main Sunday service
 
 Please [get in touch]({{< ref "contact">}}) before visiting, as ringing arrangements can occasionally vary.

@@ -2,6 +2,7 @@
 title: Contact
 featured_image: 'images/Tring-Aerial.jpg'
 description: We'd love to hear from you
+layout: contact
 ---
 
 Whether you are interested in learning to ring, arranging bells for a wedding or special service, or simply finding out more about Tring Bellringers, we’d be very happy to hear from you.
