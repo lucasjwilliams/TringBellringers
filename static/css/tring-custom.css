@@ -889,6 +889,7 @@ body.tring .site-footer .footer-doc a:hover { text-decoration: underline; text-u
     }
     .site-menu-link::after { display: none; }
     body.tring .site-menu-link.is-current { color: var(--gold-400); }
+    body.tring .site-menu-link.nav-cta.is-current { color: var(--navy-900); }
 
     .site-menu-item:last-child { border-bottom: 0; padding-top: 1.5rem; }
     body.tring .site-menu-link.nav-cta {

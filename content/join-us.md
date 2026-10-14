@@ -2,8 +2,8 @@
 title: Join us
 url: /join/
 aliases: ["/join-us/"]
-featured_image: "images/new_band.jpg"
-hero_position: "center 30%"
+featured_image: "images/about-band.jpg"
+hero_position: "center 43%"
 description: We welcome visitors, new ringers and anyone curious about learning to ring.
 ---
 
@@ -20,6 +20,7 @@ Learning to ring gives you the chance to:
 * take part in weddings, civic occasions and national events
 * enjoy a hobby that is both physical and mentally absorbing
 * help keep an important part of Tring’s heritage alive
+* count it towards your Duke of Edinburgh’s Award (DofE) skill and/or volunteering section
 
 Most people start with one-to-one teaching on a single bell, learning how to handle the rope safely and confidently. From there, you gradually build up to ringing with others as part of the band.
 
