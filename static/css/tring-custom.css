@@ -32,7 +32,7 @@ body.tring {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: var(--paper);
+    background: var(--navy-800);
     color: var(--ink);
     font-family: var(--font-body);
     font-size: 17px;
@@ -42,7 +42,7 @@ body.tring {
     text-rendering: optimizeLegibility;
 }
 
-body.tring > main { flex: 1 0 auto; }
+body.tring > main { flex: 1 0 auto; background: var(--paper); }
 body.tring main.pb7 { padding-bottom: 0; }
 
 body.tring img { max-width: 100%; }
