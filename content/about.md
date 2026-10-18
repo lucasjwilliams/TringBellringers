@@ -40,6 +40,7 @@ Current officers include:
 | Role | Name |
 | --- | --- |
 | Tower Captain | Philip Dobson |
+| Ringing Master | Lucas Williams |
 | Deputy Tower Captain | Christian Scharsach |
 | Treasurer | Cathy Anderson |
 | Steeple Keeper | Jonathan Smith |
